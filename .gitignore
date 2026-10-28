@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+.cache/
+.work/
+dist/
+*.app/
+*.vsix
+*.log
+*storage.json
+*state.vscdb*
+Cookies*
+settings.json
+auth.json
+credentials*
+*.pem
+*.key

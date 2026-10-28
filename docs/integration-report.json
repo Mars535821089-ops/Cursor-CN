@@ -1,0 +1,15 @@
+{
+  "platform": "macOS arm64",
+  "cursor_version": "3.24.18",
+  "isolated_install": true,
+  "exact_runtime_reconstruction": true,
+  "resource_hashes_match": true,
+  "signature_verified": true,
+  "idempotent_no_resigning": true,
+  "standalone_recovery": true,
+  "language_settings_restore": true,
+  "protected_database_untouched": true,
+  "source_app_unchanged": true,
+  "no_gui_launched_during_test": true,
+  "pass": true
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "patch_version": "1.0.0",
+  "cursor_version": "3.24.18",
+  "cursor_commit": "be4c9e5350d77747b42cd467cbd3370a753d4640",
+  "platform": "darwin",
+  "arch": "arm64",
+  "build_time": "2026-10-26 01:27:38",
+  "runtime_path": "out/vs/code/electron-sandbox/workbench/Cursor_Localization.js",
+  "runtime_sha256": "eceda235e56d739c6361672d82f6647870c196a303af94d4f597c41e137ae793",
+  "app_patch": "patches/app-3.24.18-arm64.json.gz",
+  "upstream_patch": "patches/upstream-customizations.json.gz",
+  "runtime_patch": "patches/runtime-safety.json.gz",
+  "nls_overlay": "patches/nls-overrides.json",
+  "upstream": {
+    "commit": "88f93c685ac5d1bc645fbb5c3e3cc1ff1c16e2a7",
+    "url": "https://codeload.github.com/vibepm666/cursor-localization-zh/zip/88f93c685ac5d1bc645fbb5c3e3cc1ff1c16e2a7",
+    "sha256": "f5f96b8fa60de8c78bc36458637049e516181a740a2d2682b2f73335ebbe4638"
+  },
+  "language_pack": {
+    "version": "1.128.2026071013",
+    "url": "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MS-CEINTL/vsextensions/vscode-language-pack-zh-hans/1.128.2026071013/vspackage",
+    "sha256": "d7591f535eb168289f71ab99bd1ed7f7a25497f3b4f41315a7d1bdb8a899b236"
+  },
+  "entitlements": {
+    ".": {
+      "com.apple.security.automation.apple-events": true,
+      "com.apple.security.cs.allow-jit": true,
+      "com.apple.security.cs.disable-library-validation": true,
+      "com.apple.security.device.audio-input": true,
+      "com.apple.security.device.camera": true
+    },
+    "Contents/Frameworks/Cursor Helper.app": {
+      "com.apple.security.automation.apple-events": true,
+      "com.apple.security.cs.allow-jit": true,
+      "com.apple.security.cs.disable-library-validation": true,
+      "com.apple.security.device.audio-input": true,
+      "com.apple.security.device.camera": true
+    },
+    "Contents/Frameworks/Cursor Helper (GPU).app": {
+      "com.apple.security.cs.allow-jit": true,
+      "com.apple.security.cs.disable-library-validation": true
+    },
+    "Contents/Frameworks/Cursor Helper (Plugin).app": {
+      "com.apple.security.cs.allow-jit": true,
+      "com.apple.security.cs.allow-unsigned-executable-memory": true,
+      "com.apple.security.cs.disable-library-validation": true
+    },
+    "Contents/Frameworks/Cursor Helper (Renderer).app": {
+      "com.apple.security.cs.allow-jit": true,
+      "com.apple.security.cs.disable-library-validation": true
+    }
+  },
+  "artifacts": {
+    "patches/app-3.24.18-arm64.json.gz": "43c6838b06f5c7f13b12d575669018412e1fc57f2feff531ef490757b3c2d238",
+    "patches/nls-overrides.json": "72cbd50355967a6f7410b7ad2c4c3134e6d351dfac77355f71ccf605670da87c",
+    "patches/runtime-safety.json.gz": "8e73a1321338cc6456f734c990c09bccce90e5973ba01fa161e4f42e91a4f75e",
+    "patches/upstream-customizations.json.gz": "dc356ade85f9ca5d13ef794f97f26cf22185238e5f36daa896aa6ff763b1eb00"
+  }
+}

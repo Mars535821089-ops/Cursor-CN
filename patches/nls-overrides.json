@@ -1,0 +1,2885 @@
+{
+  "entries": [
+    {
+      "index": 174,
+      "source_sha256": "1a03bd2fd107c453f3183e30b9716f82200671e8270fbbefbe602f5a48705527",
+      "translation": "调试"
+    },
+    {
+      "index": 175,
+      "source_sha256": "1a03bd2fd107c453f3183e30b9716f82200671e8270fbbefbe602f5a48705527",
+      "translation": "调试"
+    },
+    {
+      "index": 180,
+      "source_sha256": "e759793341ff3757eaa76e814db0170ec13b6b0a988a742d9a81240c505f48ec",
+      "translation": "命令行"
+    },
+    {
+      "index": 201,
+      "source_sha256": "47d2a515ef2f05b87d688656286a61e4f743da4b878684c7654969db17711c40",
+      "translation": "加载中..."
+    },
+    {
+      "index": 252,
+      "source_sha256": "a3e586be3eff5fb9f768c0846035db47ccf0f0e10727b0f14d829ff3a5913324",
+      "translation": "全部展开"
+    },
+    {
+      "index": 598,
+      "source_sha256": "e1c10e28ac78a7a12f4b0ece74d573b9af1d7e39ba67cf14e86582414a0e67e0",
+      "translation": "是否使用实验性编辑上下文，替代传统文本输入区域。"
+    },
+    {
+      "index": 708,
+      "source_sha256": "d73874a0345d36549433f62b60d0ffca8cdd9c1867b527a7931bee380dfa7b12",
+      "translation": "在行号上拖动时启用评论区域。"
+    },
+    {
+      "index": 920,
+      "source_sha256": "ca58b2c03893a753dc989b540aed7352fee9dabff68671e245e85109db5d0281",
+      "translation": "使用上一个{0}和下一个{1}在编辑器中的更改之间切换，接受{2}、拒绝{3}或查看当前更改的差异{4}。"
+    },
+    {
+      "index": 1037,
+      "source_sha256": "4bad6cff07d217818c512e21b5b33bf51cb09daf95e72f1e2e6e113601b5bd6f",
+      "translation": "代码缩略图"
+    },
+    {
+      "index": 1166,
+      "source_sha256": "2081555dee83ba29303c65bcac8fa84cc682aac395f7f4193c9de61c2e3df670",
+      "translation": "{0}，位置：{1}。 "
+    },
+    {
+      "index": 1275,
+      "source_sha256": "a3c7afb6114ed2cd4ac516507e61e43d375ec6e31801369bea36e233e75fe6a2",
+      "translation": "为保证性能，已暂停渲染超长行。可通过 `editor.stopRenderingLineAfter` 配置此行为。"
+    },
+    {
+      "index": 1276,
+      "source_sha256": "344c4b42101a60fbadeade33c57ac5b9a8a84ca0b7f0d32d4b30466115ab84ae",
+      "translation": "为保证性能，超长行已跳过语法标记解析。可通过 `editor.maxTokenizationLineLength` 配置长度上限。"
+    },
+    {
+      "index": 1326,
+      "source_sha256": "1de538fde9ae6298522bd85805ebc9a6128f7ab7dea50d4c6504949d0972c9b3",
+      "translation": "触发下一处编辑建议"
+    },
+    {
+      "index": 1331,
+      "source_sha256": "1b6bdf5462d3ff7539410c4a3d5e9acb18516587a87fba09f3c780aa97e2d958",
+      "translation": "接受下一部分行内编辑"
+    },
+    {
+      "index": 1355,
+      "source_sha256": "89713b9c9c1b8f659c9f49db25e4a47886dd673fee248c3f650391f09a759cef",
+      "translation": "接受"
+    },
+    {
+      "index": 1779,
+      "source_sha256": "536f679d3a4d11dde5b5665f277a130f0f96bf0785aa833d355eadf036f91ee4",
+      "translation": "配置图标可见性"
+    },
+    {
+      "index": 1798,
+      "source_sha256": "5bcc2312313ac4b5253200d9e3df5294f9eec3c297c4ef2127e19a7001eedf74",
+      "translation": "控制本地智能体运行程序能否在两次 Cursor 版本发布之间更新。更新从 Cursor 服务下载，并在下一次智能体执行时应用。"
+    },
+    {
+      "index": 1802,
+      "source_sha256": "beec23e92cc591bcdd5519b0bf43a3aff82c9f7ade8596a6715efab7ab7287d9",
+      "translation": "打开"
+    },
+    {
+      "index": 1803,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 1804,
+      "source_sha256": "eba92fa2a5e2b554571a464e457de0cb4b7679be62e420eb2c54403b3e6d4032",
+      "translation": "打开外部链接"
+    },
+    {
+      "index": 1805,
+      "source_sha256": "7f60b1a9f7c120b06b3e0f584dfb739dce929feea47720882e5a11257580c3af",
+      "translation": "要打开此链接吗？"
+    },
+    {
+      "index": 1930,
+      "source_sha256": "70bd1c1141b216a535c76f8ac6a8186761cb1699f1c5bbc08ee731ca0c4f7d5d",
+      "translation": "无法安装“{0}”扩展，因为它与当前 {1} 不兼容（应用版本 {2}，VS Code 版本 {3}）。"
+    },
+    {
+      "index": 2127,
+      "source_sha256": "9a840374c61c920f6a2cd039a15c5bdf0b226ba846e2fecccb6cf5da401c7af4",
+      "translation": "终端"
+    },
+    {
+      "index": 2178,
+      "source_sha256": "44d33b793717fbf8e625cf9f98ff717d13889afc12d6718f3041e4e5d03a60cb",
+      "translation": "进程资源管理器"
+    },
+    {
+      "index": 2181,
+      "source_sha256": "83809bb17004f79d0d6f145240a3a196368954a3fa948f8546bb38bc7e665161",
+      "translation": "确定"
+    },
+    {
+      "index": 2245,
+      "source_sha256": "6b983a81e5e8099e4e23a368e72636e31f029f2e691e5be714106b8cf59d70a7",
+      "translation": "重启"
+    },
+    {
+      "index": 2246,
+      "source_sha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e",
+      "translation": "退出"
+    },
+    {
+      "index": 2249,
+      "source_sha256": "5a7ece1fe44cc515e50ebfe9424aed0a8cc0ca97d305f71be238d1e4fcb8c828",
+      "translation": "进一步了解 [Cursor 的隐私保护措施]({0})和[安全保护措施]({1})。"
+    },
+    {
+      "index": 2589,
+      "source_sha256": "45c4bd76f7610c5cf763b9e4cc7100198028ff95ede2c3275c1ef26aaecd5a30",
+      "translation": "新建窗口"
+    },
+    {
+      "index": 2622,
+      "source_sha256": "153a851757b9a8f4f5460bceb98a47004e4bd8c97217d14389059042ec05dcbd",
+      "translation": "设置更新发布通道：预发布、稳定、开发、内部试用或候选版本。"
+    },
+    {
+      "index": 2623,
+      "source_sha256": "d00b9043588d599a06648e4f7ebe73d06fa797bb07f7c864a4f33f6deaa1014d",
+      "translation": "用于内部管理的更新发布通道覆盖设置。"
+    },
+    {
+      "index": 2625,
+      "source_sha256": "36962434c78a23c43dc0e6cd63ed520e0ffb8a31962bb3c526661989a81ab50b",
+      "translation": "正在检查更新..."
+    },
+    {
+      "index": 2626,
+      "source_sha256": "6ea67f029794022bc9d2f49a7fae049eb80e2bf82e6a91cb3a47ec3c1cb4b764",
+      "translation": "下载更新"
+    },
+    {
+      "index": 2627,
+      "source_sha256": "be6ee118f6ce86a8333153dae17b995d393c534b6d38363f5bd4382fd698d1f6",
+      "translation": "正在下载更新..."
+    },
+    {
+      "index": 2628,
+      "source_sha256": "7e08c50fb774dd673401c03a8acaa9bb7121e31acb594c4f1fe33cb1145351c9",
+      "translation": "安装更新"
+    },
+    {
+      "index": 2629,
+      "source_sha256": "bd632b114df772ce5d70cdf733d30413dd3268e4daa057ef5bfb3f743bef92e9",
+      "translation": "正在安装更新..."
+    },
+    {
+      "index": 2630,
+      "source_sha256": "8eb54569c89c260a2ee875d3b06e2fe592fe2bce4730230dc81a20fb1cf6e857",
+      "translation": "重启以更新"
+    },
+    {
+      "index": 2634,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 2642,
+      "source_sha256": "b46c90d032897a1988aa2eb4965d97723611a8de6bad74d947c5c171cf212dc9",
+      "translation": "在文件资源管理器中显示"
+    },
+    {
+      "index": 2643,
+      "source_sha256": "cc849385646ba0d67a8687fb561eec23fadf51b144242cf6a41dd5b594bb4180",
+      "translation": "在访达中显示"
+    },
+    {
+      "index": 2644,
+      "source_sha256": "2f51d650687c9201f9367014fa093415a3b9612e4ae2738e50210ef39ed0253e",
+      "translation": "打开所在文件夹"
+    },
+    {
+      "index": 2652,
+      "source_sha256": "cae7d57bc067a514b8e34c9589631a95c7dc051638ddd2a190773269279a99df",
+      "translation": "停止"
+    },
+    {
+      "index": 2653,
+      "source_sha256": "cae7d57bc067a514b8e34c9589631a95c7dc051638ddd2a190773269279a99df",
+      "translation": "停止"
+    },
+    {
+      "index": 2721,
+      "source_sha256": "211b026c1a3d82d35ab9cdbfebbcd494e1f42b94efd0484daff2755db25ca39f",
+      "translation": "不再询问"
+    },
+    {
+      "index": 2733,
+      "source_sha256": "f763c2e6f6ae684274ed8202e87bf31e4bc9ddb117455e07b061bfd1a50ead81",
+      "translation": "工作区已断开"
+    },
+    {
+      "index": 2734,
+      "source_sha256": "5b3045f2d803ae75271bf375b932eba6e0df4ad8eadf1db8fad028e23cfc1742",
+      "translation": "Cursor 在开始执行工具时与工作区断开连接。请重新加载窗口后重试。"
+    },
+    {
+      "index": 2741,
+      "source_sha256": "423e44de44431caef68c0c61968777e088fd50d2577feea60b9ba4a14b28a827",
+      "translation": "重新加载窗口"
+    },
+    {
+      "index": 2798,
+      "source_sha256": "3347b207df2a8e86a47574675a0ee7821431861c9a13140e15acdb3068cd4aa1",
+      "translation": "此条目显示的文字。可通过 `$(<name>)` 语法在文字中嵌入图标，例如 'Hello $(globe)!'。"
+    },
+    {
+      "index": 2978,
+      "source_sha256": "b46c90d032897a1988aa2eb4965d97723611a8de6bad74d947c5c171cf212dc9",
+      "translation": "在文件资源管理器中显示"
+    },
+    {
+      "index": 2996,
+      "source_sha256": "ce17b812ad20648c5143b1895427bbd489910008c3cb9ccf14d2ce54648dd795",
+      "translation": "清除 Statsig 缓存"
+    },
+    {
+      "index": 2998,
+      "source_sha256": "71eb25ee4fefca9800676f717bcb493c50390194d87b7b6851f97091463c1862",
+      "translation": "模拟连接套接字故障"
+    },
+    {
+      "index": 2999,
+      "source_sha256": "1bf6489c907c2399927a3533492c3a8afa142bec75ec7668daba78e42c6acee6",
+      "translation": "使扩展宿主崩溃（缓慢恢复）"
+    },
+    {
+      "index": 3000,
+      "source_sha256": "eb814510f3b3ea54799bb0cc9b6a702897d67a1092d809b98b22a18c94e66fab",
+      "translation": "使远程扩展宿主崩溃（缓慢恢复）"
+    },
+    {
+      "index": 3001,
+      "source_sha256": "f26f50b6122616ab960c2382d8dc4fd30e36daea4597eaf39a99c0c69c431a22",
+      "translation": "连接：模拟永久断开"
+    },
+    {
+      "index": 3002,
+      "source_sha256": "d4d1377769a9f30b2ff49222ae7ac40b134758fc57efa6abcea19e6d932abc54",
+      "translation": "连接：模拟暂时中断"
+    },
+    {
+      "index": 3003,
+      "source_sha256": "3ca95a8b631798d92c43fc5072f289c4f2d25d39bb4bc78f7c45a88cdda58e0d",
+      "translation": "导出功能开关"
+    },
+    {
+      "index": 3011,
+      "source_sha256": "5821af59848f1063e61975f466df0b0753adb47fca685d09772963a197cd620d",
+      "translation": "导出自定义模式"
+    },
+    {
+      "index": 3018,
+      "source_sha256": "c5b43b443ff4b677268896811b663bea6b5de3c317159b150184f1a1fda1d50d",
+      "translation": "将笔记导出为文件"
+    },
+    {
+      "index": 3021,
+      "source_sha256": "5bf2349d4c3fc1c5e4a631c8547db19ec9933903370510ead3845d96d2be71c0",
+      "translation": "设置 Bugbot"
+    },
+    {
+      "index": 3049,
+      "source_sha256": "5a564a50770434fc9245ac4ed82ba9064d669638a5f6ed243a9abcbed1312416",
+      "translation": "主侧边栏"
+    },
+    {
+      "index": 3054,
+      "source_sha256": "d0871397cef1b06f239d13c55ebb173512139450c3f29997f3c29dbfee92caef",
+      "translation": "切换智能体侧栏"
+    },
+    {
+      "index": 3055,
+      "source_sha256": "d0871397cef1b06f239d13c55ebb173512139450c3f29997f3c29dbfee92caef",
+      "translation": "切换智能体侧栏"
+    },
+    {
+      "index": 3058,
+      "source_sha256": "a39733f1e9d9c0fecdfaddc91e49db458d4c2dd5b9bda0c96ef22c6fd9c8e2d0",
+      "translation": "打开布局设置菜单"
+    },
+    {
+      "index": 3063,
+      "source_sha256": "826b3d3b5563c7be86cf00f7aaa389f2f345f6aab0531eb55b81c059622546dd",
+      "translation": "禅模式"
+    },
+    {
+      "index": 3085,
+      "source_sha256": "7e8d08555cf055b48159b48783ed50b62e57aa6f883882b56525aac032300902",
+      "translation": "主侧边栏"
+    },
+    {
+      "index": 3112,
+      "source_sha256": "3c9a6a0139dc140505ea06e843e3261814ef75c530c1c2cf3d847e3a74e69638",
+      "translation": "最大化聊天区域"
+    },
+    {
+      "index": 3113,
+      "source_sha256": "e1546fb1acf7d1c5b7b84ab1a8ac3b06f7f99e1808cba4fa784dd7a140047ff1",
+      "translation": "切换行内差异"
+    },
+    {
+      "index": 3114,
+      "source_sha256": "a39733f1e9d9c0fecdfaddc91e49db458d4c2dd5b9bda0c96ef22c6fd9c8e2d0",
+      "translation": "打开布局设置菜单"
+    },
+    {
+      "index": 3115,
+      "source_sha256": "7c93a4187e45d38f079aa3a0d60e0e2fcf6bde895cc758353559d45a90d5f0a3",
+      "translation": "打开 Cursor 设置"
+    },
+    {
+      "index": 3116,
+      "source_sha256": "8277b3e6f75f895f93f632c8772ea82d1bb29e20e223e834a9b2b79c886d91de",
+      "translation": "切换布局"
+    },
+    {
+      "index": 3163,
+      "source_sha256": "11b39c93777e8f1f3983bdba7c72b22fe68cfea20c677e9de53e17cb7dbfb19f",
+      "translation": "智能体"
+    },
+    {
+      "index": 3164,
+      "source_sha256": "936a161c39314b0540fe7415d2ad16cadb631568c4ebc57d6cff60f14edc099d",
+      "translation": "编辑器"
+    },
+    {
+      "index": 3165,
+      "source_sha256": "f59ab8d1331b7b16952fbd388258f856b9e09ce2d7b904f500bdfe4905640774",
+      "translation": "未命名"
+    },
+    {
+      "index": 3166,
+      "source_sha256": "f59ab8d1331b7b16952fbd388258f856b9e09ce2d7b904f500bdfe4905640774",
+      "translation": "未命名"
+    },
+    {
+      "index": 3167,
+      "source_sha256": "f59ab8d1331b7b16952fbd388258f856b9e09ce2d7b904f500bdfe4905640774",
+      "translation": "未命名"
+    },
+    {
+      "index": 3251,
+      "source_sha256": "431b1995c513a849a892c0d111e3697f6a35d513c6c281fa1c12b2b328c50e23",
+      "translation": "请退出并重新打开，以使活动栏垂直显示。"
+    },
+    {
+      "index": 3256,
+      "source_sha256": "31048cec7f4dc6b6fceb01301056762bb75c5d02d1ccc2e5168a279e1deb6238",
+      "translation": "辅助侧边栏"
+    },
+    {
+      "index": 3263,
+      "source_sha256": "7ae788aa9f37c24bdd58eb916dcc850c120a0b8e3cc5d95d866e889710c2991f",
+      "translation": "显示智能体侧栏"
+    },
+    {
+      "index": 3266,
+      "source_sha256": "0e06137b9625abf9ab519840f23e29079e7bf04646d7276ce8cd4f9364352c50",
+      "translation": "聊天历史"
+    },
+    {
+      "index": 3268,
+      "source_sha256": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "translation": "关闭"
+    },
+    {
+      "index": 3269,
+      "source_sha256": "98eea4c1c21f333640ea131c6484e3a8a861029affc6ac5438a67df28df6af68",
+      "translation": "更多操作"
+    },
+    {
+      "index": 3284,
+      "source_sha256": "8d525e5f158b9afe05f3122af363ac67763bdc4e1395b46597b320c289766ce3",
+      "translation": "已复制"
+    },
+    {
+      "index": 3286,
+      "source_sha256": "f3c657add7a605e92e9e6e75616bb527ea963333164b99db129b935e7c78057f",
+      "translation": "复制版本号"
+    },
+    {
+      "index": 3287,
+      "source_sha256": "fadae171c920b14e118bdcdb01694a62fafefffe15003d51010fa6d412c69beb",
+      "translation": "复制构建日期"
+    },
+    {
+      "index": 3288,
+      "source_sha256": "b9956773aaac0c47e538f21588c316e6d6736793b623fd4075da002ed67303f7",
+      "translation": "复制版本信息"
+    },
+    {
+      "index": 3349,
+      "source_sha256": "73667278486b9c9d3958f9449418af7d1caac4e1db5a70209b6d0bad7d9e301e",
+      "translation": "路径导航"
+    },
+    {
+      "index": 3351,
+      "source_sha256": "64488bcdbc42e52d74ab9bb817297e8e3c66c04011677d381ca0428664bb5f03",
+      "translation": "下载 Git"
+    },
+    {
+      "index": 3370,
+      "source_sha256": "28d49f191099fc57dafc4142b2806ff0a4121a8a853b88bc158c59f0810dbc5d",
+      "translation": "关闭窗格"
+    },
+    {
+      "index": 3377,
+      "source_sha256": "28d49f191099fc57dafc4142b2806ff0a4121a8a853b88bc158c59f0810dbc5d",
+      "translation": "关闭窗格"
+    },
+    {
+      "index": 3424,
+      "source_sha256": "8b3453d30dd98a1696072df96a3962cfb931f5ae7421c1abcfc9ade61afe548d",
+      "translation": "打开浏览器"
+    },
+    {
+      "index": 3518,
+      "source_sha256": "01bf65f181163171f06ac36e491f5531ab4c348bdb4904c0af0635fc434f2e1c",
+      "translation": "重置编辑器组尺寸（不含智能体）"
+    },
+    {
+      "index": 3563,
+      "source_sha256": "8ef6db6dc1c7be0f73cc331b67dae5c444d481bf715e4e9776550fb23a8e1efc",
+      "translation": "关闭全部标签页"
+    },
+    {
+      "index": 3686,
+      "source_sha256": "8b3453d30dd98a1696072df96a3962cfb931f5ae7421c1abcfc9ade61afe548d",
+      "translation": "打开浏览器"
+    },
+    {
+      "index": 3688,
+      "source_sha256": "d0c41459278e8b7335f55e00815a581f5557ab8c043f20625908c67189f07905",
+      "translation": "显示终端"
+    },
+    {
+      "index": 3689,
+      "source_sha256": "69c8f4768545addd7f35c71a3283fb09884c322fda8e19d587fb8566df269214",
+      "translation": "隐藏终端"
+    },
+    {
+      "index": 3690,
+      "source_sha256": "f804814641e89bc8f2bedd86a79eb01e88177e48a35f1534282c4d902682c2ac",
+      "translation": "显示文件"
+    },
+    {
+      "index": 3691,
+      "source_sha256": "e23d8e78e23fd59e114d2e9f600dfbfbc9296d20f2f11d096e5fc7b265feab29",
+      "translation": "添加文件夹"
+    },
+    {
+      "index": 3692,
+      "source_sha256": "33da2ac1ebae4309a830fb49e18bc0fe8d4ebc6f5b0e7ee1ac9e5ae76ae37aec",
+      "translation": "添加仓库"
+    },
+    {
+      "index": 3693,
+      "source_sha256": "e1e8410416d0aeb20e86f18f3a73b8dac2173f37ec1e4af27d74e13fb9ee2449",
+      "translation": "最大化聊天"
+    },
+    {
+      "index": 3885,
+      "source_sha256": "917525d45ebe43f53251168da229297b60132173ee5c0f914627e8ef038c821b",
+      "translation": "面板"
+    },
+    {
+      "index": 3898,
+      "source_sha256": "0e0d6e2976faf0a2a33823d38f3e1de9cf016f42760b18f61967a5cf1f83baa6",
+      "translation": "显示或隐藏面板"
+    },
+    {
+      "index": 3927,
+      "source_sha256": "aa7e64d04fcd74037bf0b0b1a3b8906b9e61bf2441f52ccf303a3ad6e0e8a40d",
+      "translation": "配置键绑定"
+    },
+    {
+      "index": 3928,
+      "source_sha256": "aa7e64d04fcd74037bf0b0b1a3b8906b9e61bf2441f52ccf303a3ad6e0e8a40d",
+      "translation": "配置键绑定"
+    },
+    {
+      "index": 3931,
+      "source_sha256": "c2bbf65a8ac0cf3b51dbb9017acd52cb42eda4bec8c3105a3bbca9d6ae979936",
+      "translation": "将主侧栏移到右侧"
+    },
+    {
+      "index": 3932,
+      "source_sha256": "db984f7d2790ae08c5ca40984ddf7809149363003dfcb68b4caffe203c30b9f5",
+      "translation": "将主侧栏移到左侧"
+    },
+    {
+      "index": 3933,
+      "source_sha256": "c2bbf65a8ac0cf3b51dbb9017acd52cb42eda4bec8c3105a3bbca9d6ae979936",
+      "translation": "将主侧栏移到右侧"
+    },
+    {
+      "index": 3934,
+      "source_sha256": "db984f7d2790ae08c5ca40984ddf7809149363003dfcb68b4caffe203c30b9f5",
+      "translation": "将主侧栏移到左侧"
+    },
+    {
+      "index": 3946,
+      "source_sha256": "e08dd4460c546ffa9b5c685a43aa28481af87d6aae4a04bd22d963bba62ab627",
+      "translation": "文件"
+    },
+    {
+      "index": 3947,
+      "source_sha256": "9c4808570ac9abe99902e993d3dc7694cb98531d7a5de3ede390f0805d10d587",
+      "translation": "编辑"
+    },
+    {
+      "index": 3948,
+      "source_sha256": "3747a314651e6294bbdab71e065ef87002eceae62ce54f7ab3eea5d8687efec9",
+      "translation": "选择"
+    },
+    {
+      "index": 3949,
+      "source_sha256": "9ad78a0170f554f267c5cf224990e314bdd795eb3e3adfe4e5ef6c005840a86b",
+      "translation": "视图"
+    },
+    {
+      "index": 3950,
+      "source_sha256": "85369ae6dbc126e48af362fd76721cffc9ef2428e0dd330239cd5413534f821c",
+      "translation": "转到"
+    },
+    {
+      "index": 3951,
+      "source_sha256": "9a840374c61c920f6a2cd039a15c5bdf0b226ba846e2fecccb6cf5da401c7af4",
+      "translation": "终端"
+    },
+    {
+      "index": 3952,
+      "source_sha256": "a16e52ef8ce75e82ba2a71c149405e351e3462bc6b18721ea098e7aa48213b4f",
+      "translation": "帮助"
+    },
+    {
+      "index": 3953,
+      "source_sha256": "66962f72a08883733c35df6f82a049b929f9579f19c4bc083ac99bead602eab3",
+      "translation": "首选项"
+    },
+    {
+      "index": 3968,
+      "source_sha256": "421833dd8a74d56978e63245de9ab5afc4d8a9892e73043596370139a12bd9e2",
+      "translation": "智能体窗口按钮"
+    },
+    {
+      "index": 3979,
+      "source_sha256": "5f0cb856939c423d4dbc21bcc39c3df061682059116f421dcc226a570d5bd720",
+      "translation": "将侧栏移到右侧"
+    },
+    {
+      "index": 3980,
+      "source_sha256": "bee50f08336966a5d9dbcd1e2622d4c4abbfa300a1c955f155dc2e8d4eb19929",
+      "translation": "将侧栏移到左侧"
+    },
+    {
+      "index": 3982,
+      "source_sha256": "0e06137b9625abf9ab519840f23e29079e7bf04646d7276ce8cd4f9364352c50",
+      "translation": "聊天历史"
+    },
+    {
+      "index": 3983,
+      "source_sha256": "87e7b8257100439707b2f2aabee7e65485d8dfe3c3055212b6874184f350f7a4",
+      "translation": "打开智能体窗口"
+    },
+    {
+      "index": 3984,
+      "source_sha256": "8eb54569c89c260a2ee875d3b06e2fe592fe2bce4730230dc81a20fb1cf6e857",
+      "translation": "重启以更新"
+    },
+    {
+      "index": 3985,
+      "source_sha256": "98eea4c1c21f333640ea131c6484e3a8a861029affc6ac5438a67df28df6af68",
+      "translation": "更多操作"
+    },
+    {
+      "index": 3986,
+      "source_sha256": "129012b27bee6cb3d241fa65bc34af20c93aebf4c98127eedb2251eea55fa08e",
+      "translation": "切换主侧栏"
+    },
+    {
+      "index": 3987,
+      "source_sha256": "d209dfefe6bd73eaf5301f488ff298cd3827fcc2872886919bdae05a8f62c6ae",
+      "translation": "切换智能体"
+    },
+    {
+      "index": 3988,
+      "source_sha256": "7c93a4187e45d38f079aa3a0d60e0e2fcf6bde895cc758353559d45a90d5f0a3",
+      "translation": "打开 Cursor 设置"
+    },
+    {
+      "index": 3989,
+      "source_sha256": "e443fd19827dacc1e410c45792d7635d20b2d3c72bb640a6dcc0b1d1c6784985",
+      "translation": "Cursor 设置"
+    },
+    {
+      "index": 3990,
+      "source_sha256": "b8d99df1066e656219062abd3b949249d34060517eb78640da3f1e6a807c273a",
+      "translation": "返回"
+    },
+    {
+      "index": 3991,
+      "source_sha256": "ef565bcda2869546dc5c79dc9ca506a7688197ca2934f570ca67a80471c98f7a",
+      "translation": "前进"
+    },
+    {
+      "index": 4022,
+      "source_sha256": "c520e8fb9dce19a2dfebc542ac2140a3b00435d791bedf418cc35ab7f253b9b7",
+      "translation": "关闭窗口"
+    },
+    {
+      "index": 4024,
+      "source_sha256": "fc61d59db3ce601f4135a5b8c959714f4335e754f636ace0acf5391e136021ab",
+      "translation": "智能体仍在工作中"
+    },
+    {
+      "index": 4025,
+      "source_sha256": "65399656271671593559302025acc3fefa8c3688302f698135430abe9ead4035",
+      "translation": "现在停止将取消当前任务。"
+    },
+    {
+      "index": 4032,
+      "source_sha256": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "translation": "关闭"
+    },
+    {
+      "index": 4033,
+      "source_sha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e",
+      "translation": "退出"
+    },
+    {
+      "index": 4034,
+      "source_sha256": "bdc090ec61e3fcfc65f469951dfe00f3f2ecfc6003c44deac8e05b7237092de6",
+      "translation": "重新加载"
+    },
+    {
+      "index": 4035,
+      "source_sha256": "c0bf75bd78bf9572596720d596bd5a20a5b9145cde0fe50dec1e783cb184d69b",
+      "translation": "更改"
+    },
+    {
+      "index": 4036,
+      "source_sha256": "d4919c9bb0ad42044ec28bcb9ab6b82c0a8aed3b1ecdb36d4cd795df0df6d267",
+      "translation": "仍然关闭"
+    },
+    {
+      "index": 4037,
+      "source_sha256": "5dea7657ba76c421b2382fa73ae51acaa2e84e53b2b2598a3273feb10645647c",
+      "translation": "仍要退出"
+    },
+    {
+      "index": 4042,
+      "source_sha256": "66f4804ee23ddc092d1bae43cb88186aa541187fff7c1cc8a4aa17e59a9f4123",
+      "translation": "归档"
+    },
+    {
+      "index": 4043,
+      "source_sha256": "2e43dd08705f6de869bfdf007af410deba84d02b47fcd3ea4864f699566c8433",
+      "translation": "后台终端仍在运行"
+    },
+    {
+      "index": 4044,
+      "source_sha256": "562d58ef0babc894f70a45087ab85b0d1262964264d9dd32ed7cb61b808da018",
+      "translation": "立即停止将终止后台终端。"
+    },
+    {
+      "index": 4046,
+      "source_sha256": "c4616ae19a87f3994766d2617aa306cef28d73674b3f5aecac355deb959270d7",
+      "translation": "立即停止将终止后台终端。"
+    },
+    {
+      "index": 4056,
+      "source_sha256": "84ca4dcb4968c843dd828c1c89e4fb1dd96eab84d1df0de803f4cbe13a07bf2b",
+      "translation": "在窗口标题栏中显示编辑器操作。"
+    },
+    {
+      "index": 4159,
+      "source_sha256": "9fc32e72665e222ea135606ab480f2453ef0fc24f1900f53527c56d74741b4be",
+      "translation": "设置快速打开及其他快速选择器的宽度，单位为像素。"
+    },
+    {
+      "index": 4177,
+      "source_sha256": "3ad982d23279c677996c20c445c7890507b785c0dcd1454e3f164b03b3763447",
+      "translation": "设置工作台活动栏的排列方向。退出并重新打开后生效。"
+    },
+    {
+      "index": 4197,
+      "source_sha256": "4baa0925843a2aa1178427722f8e7da808eef1cf0a29efd3530031eca3087bbe",
+      "translation": "控制是否在标题栏中显示导航控件。"
+    },
+    {
+      "index": 4198,
+      "source_sha256": "d395becf88abd7ada76cfb241a2536595db3e8dcd27a85bc643f94154f5a64c5",
+      "translation": "控制是否显示标题栏中的智能体窗口按钮。"
+    },
+    {
+      "index": 4199,
+      "source_sha256": "f297313f738f87cf90bb406a856467b2bbf646c8642eb64fd8a5d7bbf76fd569",
+      "translation": "控制是否在标题栏中显示布局控件。"
+    },
+    {
+      "index": 4227,
+      "source_sha256": "c3f9be282c7d545c413179b54af399e246bf82586245aebe699c917e2d827539",
+      "translation": "在窗口标题旁显示命令启动器。"
+    },
+    {
+      "index": 4234,
+      "source_sha256": "7cf2343c0c22257b7078378f58c0bf3be40ae693d93e40d12d1f00c8c94b5ef9",
+      "translation": "将菜单显示为侧边栏中的紧凑按钮。当 {0} 为 {1} 时，忽略此值。"
+    },
+    {
+      "index": 4258,
+      "source_sha256": "826b3d3b5563c7be86cf00f7aaa389f2f345f6aab0531eb55b81c059622546dd",
+      "translation": "禅模式"
+    },
+    {
+      "index": 4259,
+      "source_sha256": "01521e11f19739b3f0d24b7471f7efbff7b339059136597159d6772b85dd5be4",
+      "translation": "控制在打开禅模式时是否将工作台切换到全屏。"
+    },
+    {
+      "index": 4260,
+      "source_sha256": "d80e93e5e915041ee1f7b0fd3948403845347a12b26316f1bbfc897f89fee292",
+      "translation": "控制在打开禅模式时是否启用居中布局。"
+    },
+    {
+      "index": 4261,
+      "source_sha256": "1fec31bcfb5023b01bb72a49a26d2280491ce4d574b7eb8b9cfa28d8ebce98b0",
+      "translation": "控制打开禅模式是应该显示多个编辑器选项卡、单个编辑器选项卡还是完全隐藏编辑器标题区域。"
+    },
+    {
+      "index": 4265,
+      "source_sha256": "a3d54886a33a09d693c78f3afe980338678273697032b9ca84ef37e1b3f0fcb9",
+      "translation": "控制在打开禅模式时是否隐藏工作台底部的状态栏。"
+    },
+    {
+      "index": 4266,
+      "source_sha256": "939ca31b9a787c46a46fbe7676ed1e3a18ac5c10baf065cac9df56c3858695ad",
+      "translation": "控制在打开禅模式时是否隐藏工作台左侧或右侧的活动栏。"
+    },
+    {
+      "index": 4267,
+      "source_sha256": "f9f52b3e863a93956c6b28931d81a908d17979d5f4c884fae507e7fff2a0a142",
+      "translation": "控制在打开禅模式时是否隐藏编辑器行号。"
+    },
+    {
+      "index": 4268,
+      "source_sha256": "07bb5259c24af21e6e0b5de9acfb5ef2295f8e8c171695c298f0bf606c2fe02b",
+      "translation": "控制在禅模式下退出的窗口是否应还原为禅模式。"
+    },
+    {
+      "index": 4269,
+      "source_sha256": "91833a2678f82c083bada1e2aa6a552137e4b2b78d81624fa5aabf44ee2c04a0",
+      "translation": "控制在禅模式下是否应启用通知请勿打扰模式。如果为 true，则仅弹出错误通知。"
+    },
+    {
+      "index": 4724,
+      "source_sha256": "2ab73ea5b9f481404acfe7a2bb810a3132c004e02dc034180bb0e022862abec6",
+      "translation": "全部智能体"
+    },
+    {
+      "index": 4727,
+      "source_sha256": "ef5b4049bb367b05531fa2c2982dbc5b710c3dde724d9a2683747c1da9b61eac",
+      "translation": "对话"
+    },
+    {
+      "index": 4728,
+      "source_sha256": "7a3e4fc9a3af5d9fbc71a6b69afc02ec36ea63177e5d83a258a25baf4dafcda9",
+      "translation": "云端智能体"
+    },
+    {
+      "index": 4738,
+      "source_sha256": "8bb27dc616b6af5c9fb2b4a128760bfe133e9f8353c8ca7cfd57431956e487c2",
+      "translation": "没有最近使用的智能体"
+    },
+    {
+      "index": 4742,
+      "source_sha256": "ebf12ef47cf575b3ba9a3cc019c5310146fdac88f6d1be6618d6e91158c2f174",
+      "translation": "草稿"
+    },
+    {
+      "index": 4745,
+      "source_sha256": "66a04a2420e404763400279dfb333550d7a1b0370d28df16c269c1b0766b4617",
+      "translation": "私有推理"
+    },
+    {
+      "index": 4746,
+      "source_sha256": "4736bcc6f2d426d33d1034e4306df42be75a2f18d05906349fcddb006875e57b",
+      "translation": "重启 Cursor 以安装待处理的更新。"
+    },
+    {
+      "index": 4748,
+      "source_sha256": "29b7e97dba208d3180ed1992182f1d3bedf56881cf6dc14e264e50abb732e231",
+      "translation": "正在安装更新 — Cursor 将自动关闭并重新打开。"
+    },
+    {
+      "index": 4749,
+      "source_sha256": "c1c1009d3f37ec058070a62e22caf9ac9dae2169d452487c5c271a8bcf57a291",
+      "translation": "更新"
+    },
+    {
+      "index": 4750,
+      "source_sha256": "8749b1693f74941144464b73f49e322066f437079a400d0b11abffc6dffae2cc",
+      "translation": "正在安装"
+    },
+    {
+      "index": 4753,
+      "source_sha256": "c910d474dcd724bff83ddedeb06bf1eceaf9fb3af7c76bb282be057f36e6dffa",
+      "translation": "通用"
+    },
+    {
+      "index": 4755,
+      "source_sha256": "5936b418ff26aab9ca428b3c824147300500ac8acf14b3b6d1d0c79fa13e31d4",
+      "translation": "由设备管理配置时，在本地窗口禁用智能体，仅允许在远程工作区使用。留空表示允许所有远程目标；否则填写以逗号分隔的匹配模式，匹配不区分大小写，支持 * 通配符，例如 ssh-remote+127.0.0.1*。"
+    },
+    {
+      "index": 4760,
+      "source_sha256": "76454930af8885d411c3cb11241daf89e2df398af8a7334ef7d5bfe39601293e",
+      "translation": "索引仓库以实现即时搜索"
+    },
+    {
+      "index": 4763,
+      "source_sha256": "5263293fc202649bdc8135573ac9cd3b0bcea4355e0d8f0a59f1ddeea8eefc15",
+      "translation": "小"
+    },
+    {
+      "index": 4764,
+      "source_sha256": "21b111cbfe6e8fca2d181c43f53ad548b22e38aca955b9824706a504b0a07a2d",
+      "translation": "默认"
+    },
+    {
+      "index": 4765,
+      "source_sha256": "ab80540d98d274565e355f59f0683df6fb23ff86f735a6f8da60020d3ce05d7b",
+      "translation": "大"
+    },
+    {
+      "index": 4766,
+      "source_sha256": "f44f24c71f1f594c76b1adc9517e22a4d0a1126d717dc660a6bda8ab373c2041",
+      "translation": "超大"
+    },
+    {
+      "index": 4767,
+      "source_sha256": "99452646e34b69704c9134a093d5ce5af823cc6d4ed3566fe8ad3ba1555057ae",
+      "translation": "紧凑"
+    },
+    {
+      "index": 4768,
+      "source_sha256": "5386ea5db81c8579a363438895a447d9580cbca1bdecdad43f2839af6d6fbf5c",
+      "translation": "均衡"
+    },
+    {
+      "index": 4769,
+      "source_sha256": "6d46fcd50a63e430bb6f0b42f8e94e975a37c412b105ee235d465660d7f5e3a5",
+      "translation": "详细"
+    },
+    {
+      "index": 4770,
+      "source_sha256": "99452646e34b69704c9134a093d5ce5af823cc6d4ed3566fe8ad3ba1555057ae",
+      "translation": "紧凑"
+    },
+    {
+      "index": 4771,
+      "source_sha256": "5386ea5db81c8579a363438895a447d9580cbca1bdecdad43f2839af6d6fbf5c",
+      "translation": "均衡"
+    },
+    {
+      "index": 4772,
+      "source_sha256": "6d46fcd50a63e430bb6f0b42f8e94e975a37c412b105ee235d465660d7f5e3a5",
+      "translation": "详细"
+    },
+    {
+      "index": 4777,
+      "source_sha256": "d0871397cef1b06f239d13c55ebb173512139450c3f29997f3c29dbfee92caef",
+      "translation": "切换智能体侧栏"
+    },
+    {
+      "index": 4778,
+      "source_sha256": "db30f0ae0cd1e1752bfd78ddfbbab32b51b2f9c1953e4c1fa33b0849cf44b2a1",
+      "translation": "切换智能体侧栏可见性"
+    },
+    {
+      "index": 4779,
+      "source_sha256": "d209dfefe6bd73eaf5301f488ff298cd3827fcc2872886919bdae05a8f62c6ae",
+      "translation": "切换智能体"
+    },
+    {
+      "index": 4780,
+      "source_sha256": "c15bed4ebb737d7dad81a92055527c8c186fd07aa3d62eac6faea5bb88c9166a",
+      "translation": "切换智能体可见性"
+    },
+    {
+      "index": 4781,
+      "source_sha256": "d0871397cef1b06f239d13c55ebb173512139450c3f29997f3c29dbfee92caef",
+      "translation": "切换智能体侧栏"
+    },
+    {
+      "index": 4782,
+      "source_sha256": "d209dfefe6bd73eaf5301f488ff298cd3827fcc2872886919bdae05a8f62c6ae",
+      "translation": "切换智能体"
+    },
+    {
+      "index": 4783,
+      "source_sha256": "b2b0d1eb85d98b7db9b675bc606c6ff20f49164859c26849565ff6ef369f8f35",
+      "translation": "应用布局存储数据"
+    },
+    {
+      "index": 4788,
+      "source_sha256": "c6def7f9da6160a6c2315c2bbcaa2fbd969f98f5212dfa7a2c1dd2a09d42b99a",
+      "translation": "导出布局存储数据"
+    },
+    {
+      "index": 4789,
+      "source_sha256": "b2b0d1eb85d98b7db9b675bc606c6ff20f49164859c26849565ff6ef369f8f35",
+      "translation": "应用布局存储数据"
+    },
+    {
+      "index": 4790,
+      "source_sha256": "5840c610957ff8ec217a4412f175f540d8d0a7c088f0ef22ee748e23b7973a2e",
+      "translation": "新建智能体窗口"
+    },
+    {
+      "index": 4791,
+      "source_sha256": "67b75e11bc48d5ef7065b6b589098d7674e829e2e6052ada0665acaa1ab5c7b0",
+      "translation": "切换到{0}"
+    },
+    {
+      "index": 4794,
+      "source_sha256": "5840c610957ff8ec217a4412f175f540d8d0a7c088f0ef22ee748e23b7973a2e",
+      "translation": "新建智能体窗口"
+    },
+    {
+      "index": 4795,
+      "source_sha256": "9d0d45c242d424f614f0c785dfdda51de10dbdb043ab48cf314d8a68b31dc3ad",
+      "translation": "开发者：新建额外智能体窗口"
+    },
+    {
+      "index": 4796,
+      "source_sha256": "67b75e11bc48d5ef7065b6b589098d7674e829e2e6052ada0665acaa1ab5c7b0",
+      "translation": "切换到{0}"
+    },
+    {
+      "index": 4797,
+      "source_sha256": "a9d7415bb57cb410a753e74e5ae0a515ac30c9292b2342874080b58ae72cf37b",
+      "translation": "打开或切换到{0}"
+    },
+    {
+      "index": 4832,
+      "source_sha256": "47d2a515ef2f05b87d688656286a61e4f743da4b878684c7654969db17711c40",
+      "translation": "加载中..."
+    },
+    {
+      "index": 4841,
+      "source_sha256": "c520e8fb9dce19a2dfebc542ac2140a3b00435d791bedf418cc35ab7f253b9b7",
+      "translation": "关闭窗口"
+    },
+    {
+      "index": 4845,
+      "source_sha256": "4d782822fcd9ba196e05c834f328f858a577404b08924728d65e4699868b8761",
+      "translation": "重新加载窗口"
+    },
+    {
+      "index": 4846,
+      "source_sha256": "52f1e9abcb0fc0f937b72489c3b09c7d99d36a8f5a65a72f13d5300ba1a1b9a2",
+      "translation": "确定要退出吗？"
+    },
+    {
+      "index": 4847,
+      "source_sha256": "95c7d9ad36cf7102ab0ee224d9540f28d8ce090c44eee716bccf055db3efc5df",
+      "translation": "退出"
+    },
+    {
+      "index": 4916,
+      "source_sha256": "219c4a6c86a716e99d5dc9611b61e584deb11b57e972d87d4b773387ebc3cadd",
+      "translation": "结果"
+    },
+    {
+      "index": 4917,
+      "source_sha256": "41a86988751ad5cbcd9f1a336274976be421b311b8fe80b5a70dc2c08c8eecb3",
+      "translation": "最近使用"
+    },
+    {
+      "index": 4918,
+      "source_sha256": "2cae8b159e3fd65a35c473729c3b0f13aaa760b32917af4dcb22711326df2c68",
+      "translation": "打开画布"
+    },
+    {
+      "index": 4919,
+      "source_sha256": "5b1100a635fcffef76cc571e2444e24630000001d17e3a9058343a47416a1f97",
+      "translation": "打开可见的行内画布预览"
+    },
+    {
+      "index": 4992,
+      "source_sha256": "28d03596d24eeb4eab2d6fe21ca1cb95be7cb1fa6f92933db05e2cc4f4cdfa06",
+      "translation": "跳过"
+    },
+    {
+      "index": 4995,
+      "source_sha256": "8e3dc631b35ce48e735f8952838d63228860400a397e9fed4d2021471e2f86ee",
+      "translation": "代码缩略图"
+    },
+    {
+      "index": 5006,
+      "source_sha256": "222ed94a3be9c7da949856662d659c0e5e1d25dfca92613a9cf24f343debc11e",
+      "translation": "显示空白字符"
+    },
+    {
+      "index": 5126,
+      "source_sha256": "55988e28a4e8720a588c5c53fd47616d929a404d3d2af7e6f8ba313dce6dc3e4",
+      "translation": "全部折叠"
+    },
+    {
+      "index": 5127,
+      "source_sha256": "9f5b023a413a7d0771cc3fb51b103dc0aaaafe8f7b7c88c7258d43e3bc5b243d",
+      "translation": "全部展开"
+    },
+    {
+      "index": 5132,
+      "source_sha256": "3acd3cbe8f05345e3bc7735ecdebca15527900ec39fb53bd8306ea6ac601dab9",
+      "translation": "- 关闭评论（Escape）"
+    },
+    {
+      "index": 5241,
+      "source_sha256": "7493d3b4a7381b4ce2ef9fe24128e2aa3593a9d9f29910522d6ed230db93d78b",
+      "translation": "关闭浏览器标签页"
+    },
+    {
+      "index": 5243,
+      "source_sha256": "f6b08f9a595eea033dcba628fff3b57528c6acb56ffb4c7f3fe3b00fbadc8982",
+      "translation": "隐藏"
+    },
+    {
+      "index": 5244,
+      "source_sha256": "6b465fae56d3b64e057a010f91c19a0d87e451df80e2eab6e899f6897668a42c",
+      "translation": "关闭"
+    },
+    {
+      "index": 5245,
+      "source_sha256": "8b3453d30dd98a1696072df96a3962cfb931f5ae7421c1abcfc9ade61afe548d",
+      "translation": "打开浏览器"
+    },
+    {
+      "index": 5246,
+      "source_sha256": "aed2952e1f9a76f865e68e638221fd97df196bc50a647b896ae8f61f2cfe8aed",
+      "translation": "新建浏览器标签页"
+    },
+    {
+      "index": 5247,
+      "source_sha256": "7bed3643896e28f085c3ca34e2b67bd26a0865d31b62fab2d99525e60989f4bb",
+      "translation": "重新加载浏览器标签页"
+    },
+    {
+      "index": 5248,
+      "source_sha256": "f8f00a921e816855390c90451b20ebca283f8f5f99a6986f8e5119f80f1c7849",
+      "translation": "聚焦浏览器地址栏"
+    },
+    {
+      "index": 5249,
+      "source_sha256": "1707faa9abdf6dd6292c500a01132fcff762a550d93c0f90ab62e11132bd35e2",
+      "translation": "在浏览器中打开 cursor.com"
+    },
+    {
+      "index": 5263,
+      "source_sha256": "8b968cce31a08433c3a1b8579826f4dee8f73dbfc5439f15e332c5e06f5b10ea",
+      "translation": "语音通话"
+    },
+    {
+      "index": 5265,
+      "source_sha256": "3f940108cb1ecd9c0090da0b51b45f9fe673f00b22c7ffe3d013319b97456674",
+      "translation": "打开设置"
+    },
+    {
+      "index": 5279,
+      "source_sha256": "bf21aa9bebe41ba69dab0d5a172aea1b9124d8fb824eabe7d7c46df5c1237e14",
+      "translation": "复制图片"
+    },
+    {
+      "index": 5280,
+      "source_sha256": "76900f1bfd16c8d4dd3d25e6f46638d7165aee23883ccea6bfe071c514421769",
+      "translation": "返回"
+    },
+    {
+      "index": 5281,
+      "source_sha256": "f1c65e14817efef2b77973a4f63446a7d462cd2636bbe721207107b7d126a001",
+      "translation": "前进"
+    },
+    {
+      "index": 5282,
+      "source_sha256": "bdc090ec61e3fcfc65f469951dfe00f3f2ecfc6003c44deac8e05b7237092de6",
+      "translation": "重新加载"
+    },
+    {
+      "index": 5289,
+      "source_sha256": "859f902e947e338c1e38e39bce0078eb9b6914dbdeb2d10b247b5e4c9f0a98c4",
+      "translation": "检查元素"
+    },
+    {
+      "index": 5292,
+      "source_sha256": "31fbef162594de01bab0cd525c51f74de7bcb15063029fa1a54b2cf5944c80d8",
+      "translation": "继续"
+    },
+    {
+      "index": 5293,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 5301,
+      "source_sha256": "89c3887527744d5341fb64ab35cf4b20afb802ff734c85121ace6035e9a21269",
+      "translation": "监控持续高 CPU 占用，并提示采集诊断进程快照。仅对 Anysphere 内部用户生效。"
+    },
+    {
+      "index": 5303,
+      "source_sha256": "ca566e55ee6c70a6fa7c31fa4d95d6c972ae0a5a886ac3524e6037ffcf7b5226",
+      "translation": "报告问题"
+    },
+    {
+      "index": 5304,
+      "source_sha256": "33cbc86d246fb7d40d64c45749d8cf36e3790b9b977afc9ea8523d5c01fb896a",
+      "translation": "提供反馈…"
+    },
+    {
+      "index": 5305,
+      "source_sha256": "b46c90d032897a1988aa2eb4965d97723611a8de6bad74d947c5c171cf212dc9",
+      "translation": "在文件资源管理器中显示"
+    },
+    {
+      "index": 5306,
+      "source_sha256": "cc849385646ba0d67a8687fb561eec23fadf51b144242cf6a41dd5b594bb4180",
+      "translation": "在访达中显示"
+    },
+    {
+      "index": 5307,
+      "source_sha256": "2f51d650687c9201f9367014fa093415a3b9612e4ae2738e50210ef39ed0253e",
+      "translation": "打开所在文件夹"
+    },
+    {
+      "index": 5308,
+      "source_sha256": "c8f7a8cfe0dfa0206de9fd438d71d28703705bcc4dc3b3362dcbf75b43f3b10d",
+      "translation": "添加到聊天"
+    },
+    {
+      "index": 5309,
+      "source_sha256": "0e0269180969ded37668c2420f93d3d70fb60dff0bf74530633aa2fcf7c2835f",
+      "translation": "复制路径"
+    },
+    {
+      "index": 5311,
+      "source_sha256": "4bf78a3155258f23dcf80eb0dd0c3a26c662a817a620638c9e089b73ae590c77",
+      "translation": "Cursor 逐行归属"
+    },
+    {
+      "index": 5313,
+      "source_sha256": "4bf78a3155258f23dcf80eb0dd0c3a26c662a817a620638c9e089b73ae590c77",
+      "translation": "Cursor 逐行归属"
+    },
+    {
+      "index": 5316,
+      "source_sha256": "4bf78a3155258f23dcf80eb0dd0c3a26c662a817a620638c9e089b73ae590c77",
+      "translation": "Cursor 逐行归属"
+    },
+    {
+      "index": 5317,
+      "source_sha256": "de27a701feee644f32add72e1e4443c4ccf7d8e7e8d3c1419665b651e5e05e05",
+      "translation": "未找到 Git 仓库"
+    },
+    {
+      "index": 5319,
+      "source_sha256": "4bf78a3155258f23dcf80eb0dd0c3a26c662a817a620638c9e089b73ae590c77",
+      "translation": "Cursor 逐行归属"
+    },
+    {
+      "index": 5320,
+      "source_sha256": "4bf78a3155258f23dcf80eb0dd0c3a26c662a817a620638c9e089b73ae590c77",
+      "translation": "Cursor 逐行归属"
+    },
+    {
+      "index": 5323,
+      "source_sha256": "4bf78a3155258f23dcf80eb0dd0c3a26c662a817a620638c9e089b73ae590c77",
+      "translation": "Cursor 逐行归属"
+    },
+    {
+      "index": 5342,
+      "source_sha256": "26330ea2d9ad73d8695c65abe27296a44e059a4d72414826d9506df352cd9418",
+      "translation": "本地跟踪模式"
+    },
+    {
+      "index": 5343,
+      "source_sha256": "26330ea2d9ad73d8695c65abe27296a44e059a4d72414826d9506df352cd9418",
+      "translation": "本地跟踪模式"
+    },
+    {
+      "index": 5344,
+      "source_sha256": "06b330e99e9bba2927ffca0dc80a0f0d17fc7e0df1bfca5e7f1f7b5081dc4951",
+      "translation": "在本地记录性能标记和测量数据，并将远程过程调用镜像显示在开发者工具的网络标签页。"
+    },
+    {
+      "index": 5345,
+      "source_sha256": "3bdf4ae04b69c20cafd8663f17040a821679d66508409c6edd12d6c144301f0d",
+      "translation": "切换编辑器模式"
+    },
+    {
+      "index": 5346,
+      "source_sha256": "93b1c3e80ec1510840a0e43d44b9273e05a590b929226a8c321eb844d3cd24aa",
+      "translation": "Markdown 计划编辑器"
+    },
+    {
+      "index": 5347,
+      "source_sha256": "347f25d3fea46d4b8f06254d7c69c65ed8d2c52902a203c6170248a1d7258658",
+      "translation": "按计划执行"
+    },
+    {
+      "index": 5348,
+      "source_sha256": "93b1c3e80ec1510840a0e43d44b9273e05a590b929226a8c321eb844d3cd24aa",
+      "translation": "Markdown 计划编辑器"
+    },
+    {
+      "index": 5350,
+      "source_sha256": "93b1c3e80ec1510840a0e43d44b9273e05a590b929226a8c321eb844d3cd24aa",
+      "translation": "Markdown 计划编辑器"
+    },
+    {
+      "index": 5352,
+      "source_sha256": "93b1c3e80ec1510840a0e43d44b9273e05a590b929226a8c321eb844d3cd24aa",
+      "translation": "Markdown 计划编辑器"
+    },
+    {
+      "index": 5354,
+      "source_sha256": "93b1c3e80ec1510840a0e43d44b9273e05a590b929226a8c321eb844d3cd24aa",
+      "translation": "Markdown 计划编辑器"
+    },
+    {
+      "index": 5355,
+      "source_sha256": "07ad686fd31a85e72b490724301f40314fb09188f890d15f50f9166c238b3dd5",
+      "translation": "关闭查找组件"
+    },
+    {
+      "index": 5356,
+      "source_sha256": "93b1c3e80ec1510840a0e43d44b9273e05a590b929226a8c321eb844d3cd24aa",
+      "translation": "Markdown 计划编辑器"
+    },
+    {
+      "index": 5359,
+      "source_sha256": "0026c505347863ae188a99df6946e16ac83262585044660440699346d24784e7",
+      "translation": "恢复"
+    },
+    {
+      "index": 5365,
+      "source_sha256": "b28cf77339f7bf0e6cf332246f41023682484889f706d9b009fff7bc6c5ea1dc",
+      "translation": "复制 cursor.com 链接"
+    },
+    {
+      "index": 5366,
+      "source_sha256": "b28cf77339f7bf0e6cf332246f41023682484889f706d9b009fff7bc6c5ea1dc",
+      "translation": "复制 cursor.com 链接"
+    },
+    {
+      "index": 5367,
+      "source_sha256": "b28cf77339f7bf0e6cf332246f41023682484889f706d9b009fff7bc6c5ea1dc",
+      "translation": "复制 cursor.com 链接"
+    },
+    {
+      "index": 5368,
+      "source_sha256": "b28cf77339f7bf0e6cf332246f41023682484889f706d9b009fff7bc6c5ea1dc",
+      "translation": "复制 cursor.com 链接"
+    },
+    {
+      "index": 5387,
+      "source_sha256": "4c602442b8a4b6c7feb27c6c11d0c1525a9bf2d5445a742d1e2987b5b12268f0",
+      "translation": "打开自定义"
+    },
+    {
+      "index": 5390,
+      "source_sha256": "9065fb71346917da9639800131db3b54c5e51b8df05d3be60a82a2bc3b499096",
+      "translation": "聚焦自定义搜索框"
+    },
+    {
+      "index": 5394,
+      "source_sha256": "09b08c8862f0223526372498881401b6e4300e035989df8deeb4a0ee4fd786ae",
+      "translation": "强制显示技能迁移横幅"
+    },
+    {
+      "index": 5395,
+      "source_sha256": "b3bf5a8fc2c751cd57370b525a23882e59b8772a58c0ef9566df51043171548d",
+      "translation": "清除强制技能迁移横幅"
+    },
+    {
+      "index": 5642,
+      "source_sha256": "a7cd1395b365aec5023fb0a73c6409f3dff6617ca5345b84a0f8b344957a14bf",
+      "translation": "停止录制"
+    },
+    {
+      "index": 6039,
+      "source_sha256": "1a03bd2fd107c453f3183e30b9716f82200671e8270fbbefbe602f5a48705527",
+      "translation": "调试"
+    },
+    {
+      "index": 6040,
+      "source_sha256": "584cc3660b5adf44b76a1f8d8bab79ee8d8850f61ac6a5335d9ff0e68719f64c",
+      "translation": "调试会话期间在变量窗格中显示变量类型"
+    },
+    {
+      "index": 6041,
+      "source_sha256": "410b29eeb9a5174c9ec48da2ea7b309cb04f5145278bc3438679e23f321b165b",
+      "translation": "允许在任何文件中设置断点。"
+    },
+    {
+      "index": 6042,
+      "source_sha256": "98dd97f9903b275c7b163f536e3ffe5a53adcc7ed7cecf8aa0b0e56b7e10cb9a",
+      "translation": "控制要在使用鼠标中键单击编辑器装订线时执行的操作。"
+    },
+    {
+      "index": 6047,
+      "source_sha256": "6fc5b1f1d7818acccde7d081eeabc75147547aaaac43a0bb06e76c4f3a41d3d1",
+      "translation": "在调试会话结束时自动打开资源管理器视图。"
+    },
+    {
+      "index": 6048,
+      "source_sha256": "2b603f24394efb7b2da32396c9b362e9480d996c1d2b0a469e07587e89838005",
+      "translation": "调试会话结束时，与该会话关联的所有只读选项卡都将关闭"
+    },
+    {
+      "index": 6049,
+      "source_sha256": "3fad42ff6889d08df1598012abc9dee0d773d3fbae136a2da577bb3589461d7a",
+      "translation": "当处于调试过程中时，在编辑器中内联显示变量值。"
+    },
+    {
+      "index": 6061,
+      "source_sha256": "ab9158da3f142e02bd82f9e11b297b165c8438fc13bb8b435cb2177ca93e8318",
+      "translation": "控制应在何时显示调试状态栏项。"
+    },
+    {
+      "index": 6062,
+      "source_sha256": "16f33d3ea996e2d51101f0da751efd883a3e5436bfcac938241dd0bfe7773726",
+      "translation": "控制调试控制台是否应在调试会话结束时自动关闭。"
+    },
+    {
+      "index": 6063,
+      "source_sha256": "d3827cfec6fad48c28dd151925b568adc5c9703ae6566bfcef499d51e47322a0",
+      "translation": "在集成或外部终端中启动新的调试会话之前，请清除终端。"
+    },
+    {
+      "index": 6064,
+      "source_sha256": "a455827915b11286f628233b2da1d1bc48a228a0fbdf50afce59258ced384dbe",
+      "translation": "控制何时打开“调试”视图。"
+    },
+    {
+      "index": 6065,
+      "source_sha256": "a221442b958e3ce2f387178d6327cbfeee395471956a08d23619ec8fe37e668d",
+      "translation": "控制调试子会话是否显示在调试工具栏中。当此设置为 false 时, 子会话上的 stop 命令也将停止父会话。"
+    },
+    {
+      "index": 6066,
+      "source_sha256": "561f040293a7817c1e1f8d632c1a83d1d69830a96ba9694987f900ca0450e6c8",
+      "translation": "控制调试控制台中的字号(以像素为单位)。"
+    },
+    {
+      "index": 6067,
+      "source_sha256": "b1a1339505196d2c94a140db65d53f3b0f4f85c8a78fad6cf02e6625682ff355",
+      "translation": "控制调试控制台中的字体系列。"
+    },
+    {
+      "index": 6068,
+      "source_sha256": "fa359784ff813b2f1421251512abedc2efeb45e048eeda80c5e66c89940c2301",
+      "translation": "设置调试控制台中的行高(以像素为单位)。使用 0 可根据字号计算行高。"
+    },
+    {
+      "index": 6069,
+      "source_sha256": "0171b4ed2c6f4d5fddea083527ec7cfa3d8528a4008fbdd831b5718476cc5b56",
+      "translation": "控制是否应在调试控制台中换行。"
+    },
+    {
+      "index": 6070,
+      "source_sha256": "4d8595c3a1dfb96e1e1f11e437a3f07d2dfa565f95ff72c9a993568b1517c695",
+      "translation": "控制调试控制台是否应建议以前键入的输入。"
+    },
+    {
+      "index": 6071,
+      "source_sha256": "5d12230978353301d5fbcb93b411ed3e9b8a8e0907f5734cc711c1e2911e19fc",
+      "translation": "控制调试控制台是否应折叠相同的行，并显示出现次数和徽章。"
+    },
+    {
+      "index": 6072,
+      "source_sha256": "d285e6e8f454ee443c2030b2a422aed7f1c2a8304e868db4116f1f6355a1908a",
+      "translation": "控制是否应在调试控制台中输入时接受建议。enter 还用于评估调试控制台中键入的任何内容。"
+    },
+    {
+      "index": 6073,
+      "source_sha256": "a5a83e62cec1b3de715f249630734985dcf038665500026c37df8526b86b08bf",
+      "translation": "全局调试启动配置。应当作为跨工作区共享的 'launch.json' 的替代方法。"
+    },
+    {
+      "index": 6074,
+      "source_sha256": "b635b9a67c0959da926b7980da00aba118f9664b054eb30a83e353ac196f5720",
+      "translation": "控制当调试器中断时，工作台窗口是否应获得焦点。"
+    },
+    {
+      "index": 6075,
+      "source_sha256": "3717ca6c5b4174e8a5ede14104c0f3bb4dc95035e56398c3efa3a0cce1a71d02",
+      "translation": "控制调试器中断时编辑器是否应聚焦。"
+    },
+    {
+      "index": 6080,
+      "source_sha256": "ed3cec8bb0afc303c48d4311c3624a9296505788c08c964089f895ef0c144429",
+      "translation": "控制在运行预启动任务后遇到错误时应该怎么做。"
+    },
+    {
+      "index": 6081,
+      "source_sha256": "4757ba2c84fd3b5cd8d673e3c8ed5434790dfb8faa23b9dae2e5857c148056bb",
+      "translation": "控制断点是否应显示在概览标尺中。"
+    },
+    {
+      "index": 6082,
+      "source_sha256": "59a0488c8698dfa163d67e97839a82d67f17ae500fd4070059c79a825f6af8ce",
+      "translation": "控制调试时是否应在编辑器中显示内联断点候选修饰。"
+    },
+    {
+      "index": 6083,
+      "source_sha256": "ae23975e0e19bc3db8e5c6664835645727905af039d15b0662f8dfc58f3600f3",
+      "translation": "控制在启动调试会话前要保存哪些编辑器。"
+    },
+    {
+      "index": 6087,
+      "source_sha256": "c041e0cba8a3b132f7c9e4b9f5293bf2f82348a71b58563737c671080b1bf238",
+      "translation": "如果存在活动调试会话，控制是否确认窗口关闭时间。"
+    },
+    {
+      "index": 6090,
+      "source_sha256": "04d46b0f0ed506e246f6958b0d272e0fb5b4f1b6a38ec0ce30e87900c462e843",
+      "translation": "在反汇编视图中显示源代码。"
+    },
+    {
+      "index": 6094,
+      "source_sha256": "2fb30e465a430b6a362c3a21bec5864b11aa8afd34d92a22be4ed97c7d131fee",
+      "translation": "控制是否由调试器自动解析和展开延迟解析的变量，如 getter。"
+    },
+    {
+      "index": 6095,
+      "source_sha256": "397bd1a3065e9e9873b244eca91af7932982244f9b833f9140d8b7a13a39953f",
+      "translation": "调试器处于活动状态时的状态栏颜色。"
+    },
+    {
+      "index": 6562,
+      "source_sha256": "fe3436af86b47d22f22d93da68119fcb749dbed0335b4dc99f254e02db236156",
+      "translation": "扩展"
+    },
+    {
+      "index": 6565,
+      "source_sha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+      "translation": "无"
+    },
+    {
+      "index": 6569,
+      "source_sha256": "79475f225737176c34169046732226d03343a4f3578166f96989de01353db687",
+      "translation": "控制扩展的自动更新行为。更新是从 Microsoft 联机服务中获取的。"
+    },
+    {
+      "index": 6570,
+      "source_sha256": "c44f1de877c7abeb15aaa60e768a58acf72d9a1914a89959a0bbaaf52efddb39",
+      "translation": "启用后，将自动检查扩展更新。若扩展存在更新，将在“扩展”视图中将其标记为过时扩展。更新将从 Microsoft 联机服务中获取。"
+    },
+    {
+      "index": 6571,
+      "source_sha256": "c210b2c9b98ef21246f8726b0e00b6d3c6072c8b2afc4f4645e8c1fefb4f1bd4",
+      "translation": "扩展版本发布后，至少等待多少小时才允许从市场安装或更新。设为 0 可关闭等待；延迟安装可降低新发布版本被入侵或误发布带来的风险。"
+    },
+    {
+      "index": 6572,
+      "source_sha256": "0c173e94dcdff481f5dfbbf669f2ffe21908c0e9e4b36a96dfd5a01134cde24d",
+      "translation": "控制从商城获取扩展时发出 HTTP 请求的超时时间(毫秒)"
+    },
+    {
+      "index": 6573,
+      "source_sha256": "46d05f3ee0389fc849af67924fd1e7dbf620138853caa8e347711b2692400b9b",
+      "translation": "启用后，将不会显示扩展建议的通知。"
+    },
+    {
+      "index": 6575,
+      "source_sha256": "1371bf4d3c10337be5e8444a22de8d8cb66c39cb6c856a7a1999eae94f0ca1c2",
+      "translation": "启用后，将在离开“扩展”视图时，自动关闭扩展详细信息页面。"
+    },
+    {
+      "index": 6576,
+      "source_sha256": "7e9cc06087db21388b70e80d819df4532c2f3891c5148fb385c032b9def0d5f4",
+      "translation": "当此处列出扩展名时，该扩展名处理URI时将不会显示确认提示。"
+    },
+    {
+      "index": 6580,
+      "source_sha256": "6a4ff8ab86ff920e7b7bb9c887548149ff875590906731cb596c0970307271c9",
+      "translation": "启用 Web Worker 扩展主机。"
+    },
+    {
+      "index": 6581,
+      "source_sha256": "0895bc404fdd14f2c66036644d88143e0995823088a1a52314c54c6567e957c3",
+      "translation": "替代扩展的虚拟工作区支持。"
+    },
+    {
+      "index": 6582,
+      "source_sha256": "e972586e1cd98c9cf4d3dea16482b3bb93dc93c5fc42f15acf0e36ca269dfb5d",
+      "translation": "配置要在其他扩展主机进程中执行的扩展。"
+    },
+    {
+      "index": 6589,
+      "source_sha256": "148f339a3e3b23c772fe16c867d7fbefc464ac6aadbf8733a588b2db69de8ad0",
+      "translation": "启用后，将在超时后激活声明“onStartupFinished”激活事件的扩展。"
+    },
+    {
+      "index": 6592,
+      "source_sha256": "5ae742dd65e34c7371493c0021dc088e6b8cfcc3ffbd615e5d1e4fb47aff77c4",
+      "translation": "开启后，从 Unpkg 服务获取待更新的扩展。"
+    },
+    {
+      "index": 6666,
+      "source_sha256": "6d4771d164255fd62702b4832c0c190c08210d9c1d2786cc3cf1cefb2cbe01dd",
+      "translation": "正在导入…这可能需要一分钟。"
+    },
+    {
+      "index": 6670,
+      "source_sha256": "48845bff334a50a59aaecf499f28a7a24c3b4b891b8b18a9f1169ad8e8a6b261",
+      "translation": "关闭"
+    },
+    {
+      "index": 6671,
+      "source_sha256": "48845bff334a50a59aaecf499f28a7a24c3b4b891b8b18a9f1169ad8e8a6b261",
+      "translation": "关闭"
+    },
+    {
+      "index": 6707,
+      "source_sha256": "fe3436af86b47d22f22d93da68119fcb749dbed0335b4dc99f254e02db236156",
+      "translation": "扩展"
+    },
+    {
+      "index": 6849,
+      "source_sha256": "cdc93446fdc27650b09314c7841ae506788feb842946607f2a47d04082058eb4",
+      "translation": "重启"
+    },
+    {
+      "index": 6853,
+      "source_sha256": "cdc93446fdc27650b09314c7841ae506788feb842946607f2a47d04082058eb4",
+      "translation": "重启"
+    },
+    {
+      "index": 6856,
+      "source_sha256": "f680e66ae9e0be20d3b0ca459460ae93c4055e50f6aba2d9d7046e3d597bcaff",
+      "translation": "为扩展宿主打开开发者工具"
+    },
+    {
+      "index": 6859,
+      "source_sha256": "94308a5957c4cd6f7d44a4d00c9ea049feea68ae65de26292d930abb2ad99363",
+      "translation": "启用扩展监控，需要重启后生效。"
+    },
+    {
+      "index": 6869,
+      "source_sha256": "cdc93446fdc27650b09314c7841ae506788feb842946607f2a47d04082058eb4",
+      "translation": "重启"
+    },
+    {
+      "index": 6873,
+      "source_sha256": "cdc93446fdc27650b09314c7841ae506788feb842946607f2a47d04082058eb4",
+      "translation": "重启"
+    },
+    {
+      "index": 6880,
+      "source_sha256": "ffa98e02f7ce33fc935f02b3b668f6ad57661814dade5f41453fbee2b70cdd95",
+      "translation": "远程"
+    },
+    {
+      "index": 6881,
+      "source_sha256": "8c31e6e7223097e2e4847773c47a4efab6aaf79deeecc92a7759891c74976dde",
+      "translation": "本地"
+    },
+    {
+      "index": 6892,
+      "source_sha256": "cdc93446fdc27650b09314c7841ae506788feb842946607f2a47d04082058eb4",
+      "translation": "重启"
+    },
+    {
+      "index": 6902,
+      "source_sha256": "653f005a60724912916a58829d3b7e40fa138ae0872c380f2b5dd0d330840997",
+      "translation": "报告问题"
+    },
+    {
+      "index": 6908,
+      "source_sha256": "f04dec63b033cc73bac95d0da17a78909ac679bf4e2841763f77489a0f9a4670",
+      "translation": "启动扩展宿主 CPU 分析器"
+    },
+    {
+      "index": 6909,
+      "source_sha256": "cc72190791a6bd43fd2b56c5ced1dd604589ab080ccb3298dc6373d9e1499918",
+      "translation": "启动扩展宿主堆分配分析器"
+    },
+    {
+      "index": 6912,
+      "source_sha256": "f806cad969cc2203e86d7ce6d8f86bd92140fdf6d11adb4cbe2bccfdf2ede3d2",
+      "translation": "启动远程服务器 CPU 分析器"
+    },
+    {
+      "index": 6924,
+      "source_sha256": "9191a741c5d721516918993787fc5541d464e10c7621af838426ab5a51d2c711",
+      "translation": "当从资源管理器在终端中打开文件时，决定将启动哪种类型的终端"
+    },
+    {
+      "index": 6925,
+      "source_sha256": "adbbbe92c840f6b931fbc536539ec7d6542f6674befb126c1a7e3862715e01f0",
+      "translation": "当从“源代码管理仓库”视图在终端中打开仓库时，决定将启动哪种类型的终端"
+    },
+    {
+      "index": 6926,
+      "source_sha256": "2bbce37d034a9d1b0b09e06059ceadca66788bb5db100438d0689a0ff143459b",
+      "translation": "自定义在 Windows 上运行的终端程序。"
+    },
+    {
+      "index": 6927,
+      "source_sha256": "5cfc03ba2f7b2156833113318fa299765d342eb8c88472537bc37dc4eda94a06",
+      "translation": "自定义在 macOS 上运行的终端应用程序。"
+    },
+    {
+      "index": 6928,
+      "source_sha256": "4341e3994d4be82974b67ed67a93e4caa4e41fa477570676ee22b178468586cb",
+      "translation": "自定义在 Linux 上运行的终端程序。"
+    },
+    {
+      "index": 6981,
+      "source_sha256": "32f8dcaafb6ccafc0f9acfebc5c8131a1a5072f2e5212a0c52aba80ce8255cac",
+      "translation": "在浏览器中打开"
+    },
+    {
+      "index": 7222,
+      "source_sha256": "d4997db681a6bd00fc6022cb802e4432bcd19cd2d99e5428d816817ab1296213",
+      "translation": "额外检查匹配文件的同级文件。使用 $(basename) 作为匹配文件名的变量。"
+    },
+    {
+      "index": 7267,
+      "source_sha256": "c39d646f10769b078ae82be4da7a0079ca91182b241e749be4276e08c215c654",
+      "translation": "资源管理器"
+    },
+    {
+      "index": 7270,
+      "source_sha256": "6a19adbc2446a55aea973f110de8e7e3c5314e866b692087e02052b0641b9b7a",
+      "translation": "资源管理器"
+    },
+    {
+      "index": 7272,
+      "source_sha256": "fd5d4a5f33cfa04151cd8568d3e8f48264c45388ab2dc937cd352036774b6abf",
+      "translation": "添加文件夹"
+    },
+    {
+      "index": 7273,
+      "source_sha256": "d2b9f8f8baec315e5189a2fced6bdbaf6b9ce93336240f55b45e8bfa401d39f4",
+      "translation": "打开最近的文件"
+    },
+    {
+      "index": 7280,
+      "source_sha256": "c39d646f10769b078ae82be4da7a0079ca91182b241e749be4276e08c215c654",
+      "translation": "资源管理器"
+    },
+    {
+      "index": 7281,
+      "source_sha256": "c39d646f10769b078ae82be4da7a0079ca91182b241e749be4276e08c215c654",
+      "translation": "资源管理器"
+    },
+    {
+      "index": 7341,
+      "source_sha256": "b46c90d032897a1988aa2eb4965d97723611a8de6bad74d947c5c171cf212dc9",
+      "translation": "在文件资源管理器中显示"
+    },
+    {
+      "index": 7342,
+      "source_sha256": "cc849385646ba0d67a8687fb561eec23fadf51b144242cf6a41dd5b594bb4180",
+      "translation": "在访达中显示"
+    },
+    {
+      "index": 7343,
+      "source_sha256": "2f51d650687c9201f9367014fa093415a3b9612e4ae2738e50210ef39ed0253e",
+      "translation": "打开所在文件夹"
+    },
+    {
+      "index": 7344,
+      "source_sha256": "50009ce1da4d15e1c4a04024df691eed5f0d598e2c4c67092f205366d0adf99e",
+      "translation": "文件"
+    },
+    {
+      "index": 7428,
+      "source_sha256": "a49fcff2602bef10f58b102172031de05d4667c9647f9ff8b364c6feff8c858b",
+      "translation": "打开进程资源管理器"
+    },
+    {
+      "index": 7439,
+      "source_sha256": "0e2119f1d228bc0ffcfb5565302e92beeaaadb4c10015f4201ae93b86afec790",
+      "translation": "打开进程资源管理器"
+    },
+    {
+      "index": 7441,
+      "source_sha256": "a672e9e5d728c9342ce25b209172fae53339e887fa51742e6b5cfb166efaf84a",
+      "translation": "开始 Electron 跟踪"
+    },
+    {
+      "index": 7510,
+      "source_sha256": "b46c90d032897a1988aa2eb4965d97723611a8de6bad74d947c5c171cf212dc9",
+      "translation": "在文件资源管理器中显示"
+    },
+    {
+      "index": 7511,
+      "source_sha256": "cc849385646ba0d67a8687fb561eec23fadf51b144242cf6a41dd5b594bb4180",
+      "translation": "在访达中显示"
+    },
+    {
+      "index": 7512,
+      "source_sha256": "2f51d650687c9201f9367014fa093415a3b9612e4ae2738e50210ef39ed0253e",
+      "translation": "打开所在文件夹"
+    },
+    {
+      "index": 7555,
+      "source_sha256": "3bdf4ae04b69c20cafd8663f17040a821679d66508409c6edd12d6c144301f0d",
+      "translation": "切换编辑器模式"
+    },
+    {
+      "index": 7556,
+      "source_sha256": "86c9a27df4db9309ea6f9765e76ef0adec7fbb6fe980b372d008dcf8fd775591",
+      "translation": "Markdown 编辑器"
+    },
+    {
+      "index": 7558,
+      "source_sha256": "86c9a27df4db9309ea6f9765e76ef0adec7fbb6fe980b372d008dcf8fd775591",
+      "translation": "Markdown 编辑器"
+    },
+    {
+      "index": 7569,
+      "source_sha256": "45812d110a220ec34e813f7d05354894e8cf504aee58f496ac8664b49d4f7adf",
+      "translation": "问题"
+    },
+    {
+      "index": 7573,
+      "source_sha256": "a7b182f8c24ea564efd5c4bbacdbf11124c38e49d078bd4d7be5e1050d1e1280",
+      "translation": "问题"
+    },
+    {
+      "index": 7575,
+      "source_sha256": "a7b182f8c24ea564efd5c4bbacdbf11124c38e49d078bd4d7be5e1050d1e1280",
+      "translation": "问题"
+    },
+    {
+      "index": 7577,
+      "source_sha256": "a7b182f8c24ea564efd5c4bbacdbf11124c38e49d078bd4d7be5e1050d1e1280",
+      "translation": "问题"
+    },
+    {
+      "index": 7579,
+      "source_sha256": "a7b182f8c24ea564efd5c4bbacdbf11124c38e49d078bd4d7be5e1050d1e1280",
+      "translation": "问题"
+    },
+    {
+      "index": 7581,
+      "source_sha256": "a7b182f8c24ea564efd5c4bbacdbf11124c38e49d078bd4d7be5e1050d1e1280",
+      "translation": "问题"
+    },
+    {
+      "index": 7584,
+      "source_sha256": "a7b182f8c24ea564efd5c4bbacdbf11124c38e49d078bd4d7be5e1050d1e1280",
+      "translation": "问题"
+    },
+    {
+      "index": 7585,
+      "source_sha256": "a7b182f8c24ea564efd5c4bbacdbf11124c38e49d078bd4d7be5e1050d1e1280",
+      "translation": "问题"
+    },
+    {
+      "index": 7587,
+      "source_sha256": "a7b182f8c24ea564efd5c4bbacdbf11124c38e49d078bd4d7be5e1050d1e1280",
+      "translation": "问题"
+    },
+    {
+      "index": 7588,
+      "source_sha256": "55988e28a4e8720a588c5c53fd47616d929a404d3d2af7e6f8ba313dce6dc3e4",
+      "translation": "全部折叠"
+    },
+    {
+      "index": 7597,
+      "source_sha256": "01ba8bcd9f1df9b548f0d7d0d44f88c4c5524f47ac61e3e07def81e04f011e05",
+      "translation": "复制消息"
+    },
+    {
+      "index": 7598,
+      "source_sha256": "01ba8bcd9f1df9b548f0d7d0d44f88c4c5524f47ac61e3e07def81e04f011e05",
+      "translation": "复制消息"
+    },
+    {
+      "index": 7601,
+      "source_sha256": "c8f7a8cfe0dfa0206de9fd438d71d28703705bcc4dc3b3362dcbf75b43f3b10d",
+      "translation": "添加到聊天"
+    },
+    {
+      "index": 7602,
+      "source_sha256": "ae6d7f53aa85d628f0158a8531af7797754dba36926328cba7912aa7d3d66983",
+      "translation": "使用智能体修复"
+    },
+    {
+      "index": 7674,
+      "source_sha256": "dd83849a6322a81fe9ce32fb9c1bc3df4c8d1992da4bfa1b7fdc18f8363854c3",
+      "translation": "{0} 在 {1}（`{2}`）中发现了模型上下文协议服务器。{0} 可以在对话中使用这些服务器的功能。\n\n是否允许运行来自 {3} 的 MCP 服务器？"
+    },
+    {
+      "index": 7883,
+      "source_sha256": "06c31139d6c0ec6aaa90fa06d6d2e10e4f45ab5027035c86925ae0c12f69e18d",
+      "translation": "快速操作 {0}"
+    },
+    {
+      "index": 8379,
+      "source_sha256": "2bbd00caedab664cccb31a273ce285a1602145970f35cd2023038243ae3070a0",
+      "translation": "将 VS Code 配置带到 Cursor。导入设置与扩展，即可无缝上手。"
+    },
+    {
+      "index": 8380,
+      "source_sha256": "2cff9baabf56ca002610e113bc94deb6ededddfc3c130365b6e88ed5195bf774",
+      "translation": "导入"
+    },
+    {
+      "index": 8416,
+      "source_sha256": "eabbf3abaf8d98abb9763d83f29b04716524a9d697dfdd06ae3ed77bdd12c929",
+      "translation": "大纲"
+    },
+    {
+      "index": 8467,
+      "source_sha256": "656273eee780e794702aed667611ac00e0b1b0466289891d3df9870871184777",
+      "translation": "输出"
+    },
+    {
+      "index": 8468,
+      "source_sha256": "b2439bcb8dee14b685f137f294b0e0cb62f5aadf45143ce01d79777d435a93b4",
+      "translation": "输出"
+    },
+    {
+      "index": 8469,
+      "source_sha256": "b2439bcb8dee14b685f137f294b0e0cb62f5aadf45143ce01d79777d435a93b4",
+      "translation": "输出"
+    },
+    {
+      "index": 8481,
+      "source_sha256": "2e47e954f9f7e9c543c42c6d5804959802e695285034b7d35184e5a85f63acb9",
+      "translation": "启用时，将自动分析慢速呈现器。"
+    },
+    {
+      "index": 8485,
+      "source_sha256": "6b983a81e5e8099e4e23a368e72636e31f029f2e691e5be714106b8cf59d70a7",
+      "translation": "重启"
+    },
+    {
+      "index": 8488,
+      "source_sha256": "cdc93446fdc27650b09314c7841ae506788feb842946607f2a47d04082058eb4",
+      "translation": "重启"
+    },
+    {
+      "index": 8532,
+      "source_sha256": "a3dcccb8362a2e892c62a395bb35dfd8561edaf4ccd83e6b891c6f6ee154c576",
+      "translation": "VS Code 设置"
+    },
+    {
+      "index": 8543,
+      "source_sha256": "3f44d0c13e5c32868ada9a2ec208b8a3bf23941e23ee2cc9873f802cfd49ba85",
+      "translation": "VS Code 设置"
+    },
+    {
+      "index": 8674,
+      "source_sha256": "2c014f8f8986f1b274dbfa182498444da048b8caa48e5335d5cdf778352d7e6b",
+      "translation": "Cursor"
+    },
+    {
+      "index": 8680,
+      "source_sha256": "4bad6cff07d217818c512e21b5b33bf51cb09daf95e72f1e2e6e113601b5bd6f",
+      "translation": "代码缩略图"
+    },
+    {
+      "index": 8685,
+      "source_sha256": "73667278486b9c9d3958f9449418af7d1caac4e1db5a70209b6d0bad7d9e301e",
+      "translation": "路径导航"
+    },
+    {
+      "index": 8846,
+      "source_sha256": "2aac3236326153bbf41e80c26f9c92d4438f158d21ab3b3a942887c1355e7eea",
+      "translation": "打开视图…"
+    },
+    {
+      "index": 9054,
+      "source_sha256": "ffa98e02f7ce33fc935f02b3b668f6ad57661814dade5f41453fbee2b70cdd95",
+      "translation": "远程"
+    },
+    {
+      "index": 9055,
+      "source_sha256": "5c24d3eb2171d138f066e556f416c858b25b34a5d3685a2a96623295e4922ac6",
+      "translation": "启用后，扩展将本地下载并安装在远程上。"
+    },
+    {
+      "index": 9059,
+      "source_sha256": "83809bb17004f79d0d6f145240a3a196368954a3fa948f8546bb38bc7e665161",
+      "translation": "确定"
+    },
+    {
+      "index": 9064,
+      "source_sha256": "83809bb17004f79d0d6f145240a3a196368954a3fa948f8546bb38bc7e665161",
+      "translation": "确定"
+    },
+    {
+      "index": 9068,
+      "source_sha256": "83809bb17004f79d0d6f145240a3a196368954a3fa948f8546bb38bc7e665161",
+      "translation": "确定"
+    },
+    {
+      "index": 9086,
+      "source_sha256": "f43b59b24a68792087b873c767b26cd87a7d73049f9e364fc27de11b5d2e1d94",
+      "translation": "启用"
+    },
+    {
+      "index": 9106,
+      "source_sha256": "7e608c43be5e5197382282e5c49c3182207e43b6602a3c9f215cadc5395527f3",
+      "translation": "远程隧道访问注册名。如果未设置，则使用主机名。"
+    },
+    {
+      "index": 9108,
+      "source_sha256": "802f655bc3dd3e258b43cff4581fd76f4c4ff110f170405a09dce69dfa708281",
+      "translation": "启用远程隧道访问时，防止计算机进入休眠。"
+    },
+    {
+      "index": 9136,
+      "source_sha256": "aff0766a5290e117b8433c351bae7b7b23bed682b2369bd822d88a647cc58512",
+      "translation": "审查"
+    },
+    {
+      "index": 9197,
+      "source_sha256": "e5c7ca9a0afdca272d1e249e4ad623fd4c5a25a21a4e27405598c80748170aec",
+      "translation": "源代码管理视图中每组最多渲染的资源数量。超出时仅截断显示，不影响实际提交、暂存或放弃的文件。设为 0 显示全部资源。"
+    },
+    {
+      "index": 9222,
+      "source_sha256": "c2d6f87b52016ac9ed3dd3bba865152d33bfe9666366a6d624df0ad3e76ce424",
+      "translation": "智能体审查设置"
+    },
+    {
+      "index": 9223,
+      "source_sha256": "64d68e73cc7c4c9f93cfeeb7a4a4636a0a531acf0e9557b376a9bb49362d6a4a",
+      "translation": "启动 Agent 审查"
+    },
+    {
+      "index": 9225,
+      "source_sha256": "66c324f0ec110f5b200a8417c4c144c5a10ee3eea7057a5fe042a4df7bb222a5",
+      "translation": "源代码管理"
+    },
+    {
+      "index": 9231,
+      "source_sha256": "ac6445dbe9dd463c9c139291176ecf3bd6997a7035b854787fb66e608a9120fe",
+      "translation": "源代码管理"
+    },
+    {
+      "index": 9233,
+      "source_sha256": "66c324f0ec110f5b200a8417c4c144c5a10ee3eea7057a5fe042a4df7bb222a5",
+      "translation": "源代码管理"
+    },
+    {
+      "index": 9234,
+      "source_sha256": "1e32af87ea74279d860df7cf62f0fa4e1207caf75db1d3d2bf5e23a6af5ba18c",
+      "translation": "仓库"
+    },
+    {
+      "index": 9237,
+      "source_sha256": "401c5ae6e95c940a02221e9904bbc4994ee5d702d72698c871091be34704c0b6",
+      "translation": "智能体审查"
+    },
+    {
+      "index": 9285,
+      "source_sha256": "0bb504967151519284f4717ed46ca375d45c82950cb081d37e3cfbfb3600d5f2",
+      "translation": "在 Cursor 逐行归属视图中打开"
+    },
+    {
+      "index": 9286,
+      "source_sha256": "969ccbd3cf6300ecd5c880459d81ae9027df7517563184a1b8b15282db230621",
+      "translation": "邮箱"
+    },
+    {
+      "index": 9303,
+      "source_sha256": "2cfc54708d7c2334f852adf32b5b06c05200477ee780b4471302f69ef171dbcd",
+      "translation": "请使用刷新操作（$(refresh)）刷新图形。"
+    },
+    {
+      "index": 9313,
+      "source_sha256": "9bebeb8dc7662e1926fd2bf1ba9be06650be6981387592fe42d7088bb1ff2a00",
+      "translation": "审查分支"
+    },
+    {
+      "index": 9325,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 9328,
+      "source_sha256": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "translation": "关闭"
+    },
+    {
+      "index": 9380,
+      "source_sha256": "f7165bea518431c8aa5201afc7ccea5a058c4068c24831b7b344ff70ca20b284",
+      "translation": "转到文件"
+    },
+    {
+      "index": 9419,
+      "source_sha256": "48845bff334a50a59aaecf499f28a7a24c3b4b891b8b18a9f1169ad8e8a6b261",
+      "translation": "关闭"
+    },
+    {
+      "index": 9504,
+      "source_sha256": "bd4047e00a4267034bee5afa0fa67ea36d0f3f40a0990d45c21ad182859c37a4",
+      "translation": "未找到索引结果："
+    },
+    {
+      "index": 9512,
+      "source_sha256": "8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771",
+      "translation": "了解更多"
+    },
+    {
+      "index": 9548,
+      "source_sha256": "49c266baaaa70981ea188fa714d5c40cf13830d786a861c9943ae0d26a7f3fe9",
+      "translation": "搜索"
+    },
+    {
+      "index": 9563,
+      "source_sha256": "06717c8a90b61e58d6a48f14dd8ff49b3e2b36162a031ed6be759f8e7d28b1a4",
+      "translation": "控制 Quick Open 文件结果中是否包括全局符号搜索的结果。"
+    },
+    {
+      "index": 9564,
+      "source_sha256": "53ee220df7af795c9439c7697d3ffc2507a58230d5041b1f75958419f84d3294",
+      "translation": "用于搜索的线程数。设置为 0 时，引擎将自动确定此值。"
+    },
+    {
+      "index": 9565,
+      "source_sha256": "073405c954da4044a196cfdeae8ecb54232d03dd377a2dc1baf1047058bfaa6d",
+      "translation": "是否在 Quick Open 的文件结果中包含最近打开的文件。"
+    },
+    {
+      "index": 9568,
+      "source_sha256": "d3a9c26848755be669e5df4cfbb1323d541813c1e0b79b1724e91540e977b55e",
+      "translation": "控制在快速打开中筛选时编辑器历史记录的排序顺序。"
+    },
+    {
+      "index": 9569,
+      "source_sha256": "ad2d65e1a2908850d4784c44d6f6a43270c55b2ca5560d5d8f80203af404354d",
+      "translation": "开启后，快速打开使用 VS Code 默认搜索算法，而非 Cursor 修改后的版本。"
+    },
+    {
+      "index": 9570,
+      "source_sha256": "0161cf9230a188ca55cdefdbffbe6cbe6f7ccfc575797e26ff37108d47891538",
+      "translation": "控制是否在搜索中跟踪符号链接。"
+    },
+    {
+      "index": 9571,
+      "source_sha256": "fe7d5f92f07d226a9480ba5795d1b6a010cffdda96477bfdf4d780e423810bfe",
+      "translation": "若搜索词全为小写，则不区分大小写进行搜索，否则区分大小写进行搜索。"
+    },
+    {
+      "index": 9572,
+      "source_sha256": "5a4da794f2308fe22be5f051bacac1b54bef51899cb9db8275a1db55fb4816f1",
+      "translation": "控制搜索视图是否读取或修改 macOS 的共享查找剪贴板。"
+    },
+    {
+      "index": 9577,
+      "source_sha256": "7676d9efaec496505153b1d93c29979536754b9f7929caaf82fc93bbf5cdd3f7",
+      "translation": "控制是折叠还是展开搜索结果。"
+    },
+    {
+      "index": 9578,
+      "source_sha256": "a2f6925168932461d98bf09e535785fca2d201120f3ee5bef258920ef7ec1c8a",
+      "translation": "控制在选择或替换匹配项时是否打开“替换预览”视图。"
+    },
+    {
+      "index": 9579,
+      "source_sha256": "3ffd6cac6ac13e663c6b3edc675628a058c938d2ec607a5ed8afe95656f322d4",
+      "translation": "控制是否显示搜索结果所在的行号。"
+    },
+    {
+      "index": 9584,
+      "source_sha256": "350cb8eed54d22e066e23e96a8cbdcea3e1c2e56b7900c28c58b2e617bc52f38",
+      "translation": "在搜索视图中控制操作栏的位置。"
+    },
+    {
+      "index": 9585,
+      "source_sha256": "76caedae730b9fd62a1f0e816f1ed465cf6cfc6c9d8ea81be0d8a1b196995eff",
+      "translation": "在键入时搜索所有文件。"
+    },
+    {
+      "index": 9586,
+      "source_sha256": "b54307942dd889aaa131c353209791a26a405f2b96754ea4883be198b3a050d5",
+      "translation": "当活动编辑器没有选定内容时，从离光标最近的字词开始进行种子设定搜索。"
+    },
+    {
+      "index": 9592,
+      "source_sha256": "8a70b7cea8127748b78296fb41f333bf2c94e9d171699ca54533de0a62e341bb",
+      "translation": "配置在搜索编辑器中双击结果的效果。"
+    },
+    {
+      "index": 9595,
+      "source_sha256": "e67c517d0c186076f884f5c3d6257dcc8b9600820a98ffc4ba16aa47ccc041bb",
+      "translation": "配置在搜索编辑器中单击结果的效果。"
+    },
+    {
+      "index": 9596,
+      "source_sha256": "c455e74c7be1f23bfe08425bcb1c81723cffc90b89150d59d30dd08403f37789",
+      "translation": "启用后，新的搜索编辑器将重用之前打开的搜索编辑器的包含、排除和标志。"
+    },
+    {
+      "index": 9598,
+      "source_sha256": "2acf728475a4e953ddf54de82de1b9941428cbdc6f928c3ecc4c352d98c45deb",
+      "translation": "触发搜索时，聚焦搜索编辑器结果，而不是搜索编辑器输入。"
+    },
+    {
+      "index": 9605,
+      "source_sha256": "35ce9dead51cbaf98a8b7207f62c9320151cd0e61a543f9dcfa955f5f73ce078",
+      "translation": "控制搜索结果的排序顺序。"
+    },
+    {
+      "index": 9606,
+      "source_sha256": "9d12db16e3f01538aff896397188e44fa67aace6863ad91fc67ab94d80770a42",
+      "translation": "控制搜索文件修饰是否应使用颜色。"
+    },
+    {
+      "index": 9607,
+      "source_sha256": "15efb8b6f1fa78cb44ec27bb9c44320f54377a44bb675bf93ed6bdf6bc2d5689",
+      "translation": "控制搜索文件修饰是否应使用徽章。"
+    },
+    {
+      "index": 9610,
+      "source_sha256": "b03fc5cc82ef86fd5c830eec7b2b30a851ed32bb6bb86019a1328b3c5aabbfb4",
+      "translation": "控制默认搜索结果视图模式。"
+    },
+    {
+      "index": 9611,
+      "source_sha256": "c852b7c5eb8a8a5e3d3f0e8ed801d513186999ac69c869e30866c3e2a4ff33f2",
+      "translation": "在打开快速搜索视图时，控制是否自动恢复上一次输入的值。"
+    },
+    {
+      "index": 9612,
+      "source_sha256": "7547078cc406e71c4ce3f6515efb7ce1113ffd15d18d5c4226541c74d33e97b4",
+      "translation": "搜索符号时不使用其符号提供程序的扩展列表，请使用扩展标识。"
+    },
+    {
+      "index": 9613,
+      "source_sha256": "eb479d3947c8fc8ca8708b4712cbb73d0611bb8157fb0a7e37917683269eaf04",
+      "translation": "显示已关闭笔记本的笔记本编辑器中丰富的内容结果。请在更改此设置后刷新搜索结果。"
+    },
+    {
+      "index": 9659,
+      "source_sha256": "7adb157ef39112ef907fa541b746f53291cb59b6893f8caa2ee608c3fd499940",
+      "translation": "控制是否启用实验性的共享命令。"
+    },
+    {
+      "index": 10203,
+      "source_sha256": "9a840374c61c920f6a2cd039a15c5bdf0b226ba846e2fecccb6cf5da401c7af4",
+      "translation": "终端"
+    },
+    {
+      "index": 10291,
+      "source_sha256": "0d1e2a7cde054ab48455bf6fefcab1edb3633a965c9dadce80d1fb366ea51a01",
+      "translation": "配置终端设置"
+    },
+    {
+      "index": 10340,
+      "source_sha256": "ef1dd7532562c5eb441f27f0a551b7488bfa5c0b531379c3e7bac67400df8319",
+      "translation": "拆分终端"
+    },
+    {
+      "index": 10377,
+      "source_sha256": "1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d",
+      "translation": "否"
+    },
+    {
+      "index": 10552,
+      "source_sha256": "c9c77c290eeeed083d49d3344d36ad1e9430d40d0a7edcfb1295a25a48e19e6d",
+      "translation": "是否为每个终端显示环境变化指示器，以说明扩展已修改或希望修改终端环境。"
+    },
+    {
+      "index": 10563,
+      "source_sha256": "cc706e577ceffa1df316290a7848453240c591d91d5c500c137fea95870c060f",
+      "translation": "在 Windows 上是否使用 ConPTY 进行终端进程通信，需要 Windows 10 内部版本 18309 或更高；关闭后使用 Winpty。"
+    },
+    {
+      "index": 10646,
+      "source_sha256": "1c57c0c6c4bbadae6a2d8a1dfcc65175326a403935b24de446b57bb478846390",
+      "translation": "向终端发送自定义序列"
+    },
+    {
+      "index": 10695,
+      "source_sha256": "508d784e83ef127e95ddbf2628f16ab4d44f4d0d3ce7c2eeb939d8787767dffc",
+      "translation": "侧边对话"
+    },
+    {
+      "index": 10696,
+      "source_sha256": "508d784e83ef127e95ddbf2628f16ab4d44f4d0d3ce7c2eeb939d8787767dffc",
+      "translation": "侧边对话"
+    },
+    {
+      "index": 10883,
+      "source_sha256": "305693f9255df3a50a675c66861fa202d433676106da3b9bfb3484312daf092a",
+      "translation": "当 {1} 设置为 {2} 时，为受支持的命令行环境（{0}）启用终端智能补全建议（预览）。"
+    },
+    {
+      "index": 11335,
+      "source_sha256": "e4ce476d3f54c2a52709d432c0a68e5d3901515687e9e77867fb560c1d44cc68",
+      "translation": "报告问题"
+    },
+    {
+      "index": 11339,
+      "source_sha256": "09f2c882844bde825cfac1113ea3b444d03c9673f928a5227ba5fe914057ad8a",
+      "translation": "报告卡顿"
+    },
+    {
+      "index": 11362,
+      "source_sha256": "2ba3159723badda76f47cc0dd7efe17c69fabe9b82ff2e37762e275553dd0141",
+      "translation": "捕获并发送调试数据"
+    },
+    {
+      "index": 11364,
+      "source_sha256": "2ba3159723badda76f47cc0dd7efe17c69fabe9b82ff2e37762e275553dd0141",
+      "translation": "捕获并发送调试数据"
+    },
+    {
+      "index": 11369,
+      "source_sha256": "b46c90d032897a1988aa2eb4965d97723611a8de6bad74d947c5c171cf212dc9",
+      "translation": "在文件资源管理器中显示"
+    },
+    {
+      "index": 11374,
+      "source_sha256": "31fbef162594de01bab0cd525c51f74de7bcb15063029fa1a54b2cf5944c80d8",
+      "translation": "继续"
+    },
+    {
+      "index": 11375,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 11381,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 11382,
+      "source_sha256": "2ba3159723badda76f47cc0dd7efe17c69fabe9b82ff2e37762e275553dd0141",
+      "translation": "捕获并发送调试数据"
+    },
+    {
+      "index": 11403,
+      "source_sha256": "db5e21ce93b3f93088e8513ee2420e9d6cf6b9fea89cd986e1e0089979ff66c6",
+      "translation": "移除提及"
+    },
+    {
+      "index": 11404,
+      "source_sha256": "202e7a9ae234a4c2ccf80fde57e40c1ab8238a84cb213f9d64e2142f28cb8e65",
+      "translation": "认识全新的 Cursor"
+    },
+    {
+      "index": 11405,
+      "source_sha256": "87835920fbdc73c5d43a5ba4bcafd040209868c583009ed3d1dd4fc9bfb3c7d8",
+      "translation": "并行运行多个智能体"
+    },
+    {
+      "index": 11406,
+      "source_sha256": "f9d8af78d40b29218b4301d10ce54149a967360eb017b8c56248b00d519ccf80",
+      "translation": "您的所有智能体都可跨仓库运行，可在本地、远程 SSH 和云端使用"
+    },
+    {
+      "index": 11407,
+      "source_sha256": "ea3b342d63ba0a9a515f9c154a54aea36a83d58f909731c54eb1464ac13c2727",
+      "translation": "随时深入探索"
+    },
+    {
+      "index": 11408,
+      "source_sha256": "bdecb81663e889bbb873d7b2773fa25718212d67e1ae43631efcad49cd43d451",
+      "translation": "在需要时访问编辑器中最好用的部分，例如文件和浏览器"
+    },
+    {
+      "index": 11409,
+      "source_sha256": "201d0ea460eaa99422e18762f2c1ae3de855f597ff97daa88546a3cd8f3b5d31",
+      "translation": "智能体窗口"
+    },
+    {
+      "index": 11410,
+      "source_sha256": "4736bcc6f2d426d33d1034e4306df42be75a2f18d05906349fcddb006875e57b",
+      "translation": "重启 Cursor 以安装待处理的更新。"
+    },
+    {
+      "index": 11412,
+      "source_sha256": "29b7e97dba208d3180ed1992182f1d3bedf56881cf6dc14e264e50abb732e231",
+      "translation": "正在安装更新 — Cursor 将自动关闭并重新打开。"
+    },
+    {
+      "index": 11413,
+      "source_sha256": "c1c1009d3f37ec058070a62e22caf9ac9dae2169d452487c5c271a8bcf57a291",
+      "translation": "更新"
+    },
+    {
+      "index": 11414,
+      "source_sha256": "8749b1693f74941144464b73f49e322066f437079a400d0b11abffc6dffae2cc",
+      "translation": "正在安装"
+    },
+    {
+      "index": 11426,
+      "source_sha256": "8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771",
+      "translation": "了解更多"
+    },
+    {
+      "index": 11434,
+      "source_sha256": "6ea67f029794022bc9d2f49a7fae049eb80e2bf82e6a91cb3a47ec3c1cb4b764",
+      "translation": "下载更新"
+    },
+    {
+      "index": 11435,
+      "source_sha256": "73b6e48a1b552d112502d37a7b7870436efc5ea1de0bca58ccf12d6ae15d3a0c",
+      "translation": "稍后"
+    },
+    {
+      "index": 11438,
+      "source_sha256": "c1c1009d3f37ec058070a62e22caf9ac9dae2169d452487c5c271a8bcf57a291",
+      "translation": "更新"
+    },
+    {
+      "index": 11439,
+      "source_sha256": "73b6e48a1b552d112502d37a7b7870436efc5ea1de0bca58ccf12d6ae15d3a0c",
+      "translation": "稍后"
+    },
+    {
+      "index": 11748,
+      "source_sha256": "8f6fb4eb7f42c0e245e29e63f5b82cc3ba19852681d1ed9aed291f59cf75ec0e",
+      "translation": "安全"
+    },
+    {
+      "index": 11772,
+      "source_sha256": "beec23e92cc591bcdd5519b0bf43a3aff82c9f7ade8596a6715efab7ab7287d9",
+      "translation": "打开"
+    },
+    {
+      "index": 11780,
+      "source_sha256": "47814a049126802076b14ce3b7bd3fc8a595b39f31942c21ed04f002fd2c67ee",
+      "translation": "管理"
+    },
+    {
+      "index": 11781,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 11785,
+      "source_sha256": "1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d",
+      "translation": "否"
+    },
+    {
+      "index": 11798,
+      "source_sha256": "5a23444828db654a0eaef5f81aabe79432871f43f73ea888279b3ee212f98a7b",
+      "translation": "管理"
+    },
+    {
+      "index": 11799,
+      "source_sha256": "8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771",
+      "translation": "了解更多"
+    },
+    {
+      "index": 11814,
+      "source_sha256": "6fa5a5b1f4959635556fa1c41b3bae59acd9ef7f179f675832cb4fd9be315ad7",
+      "translation": "工作区名称"
+    },
+    {
+      "index": 11901,
+      "source_sha256": "ae48a481ed509b4989208ad9e5996d02fc6d8563015fc370115658f07160fd34",
+      "translation": "开发：强制下一次自动审查阻止"
+    },
+    {
+      "index": 11920,
+      "source_sha256": "828fa8c1e470639e0ba71441deabf1a078cc12f42df5fc3f3a579343fa27bcb7",
+      "translation": "设置 Anyrun 集群"
+    },
+    {
+      "index": 11924,
+      "source_sha256": "d8f961f40e871899b770b9b892d8515ae6cd7ed7a167e36c09496d368ead3835",
+      "translation": "模拟新用户"
+    },
+    {
+      "index": 11925,
+      "source_sha256": "6dad5052383d5030433c65c5c6a118460c6be1cc3647ae923d0ae9a5043c319d",
+      "translation": "显示或隐藏开发者工具"
+    },
+    {
+      "index": 11941,
+      "source_sha256": "8ea7b760198060655cd1fa4ce0ae13cd404895d969412cd58e68b5c4aacd1909",
+      "translation": "关闭此窗口？"
+    },
+    {
+      "index": 11942,
+      "source_sha256": "52f1e9abcb0fc0f937b72489c3b09c7d99d36a8f5a65a72f13d5300ba1a1b9a2",
+      "translation": "确定要退出吗？"
+    },
+    {
+      "index": 11944,
+      "source_sha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e",
+      "translation": "退出"
+    },
+    {
+      "index": 11945,
+      "source_sha256": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "translation": "关闭"
+    },
+    {
+      "index": 11946,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 11947,
+      "source_sha256": "d26efbb06695c32fe2fc6c0e60a74126ad285de8e04120d7e61bd9ac56ff4550",
+      "translation": "关闭窗口"
+    },
+    {
+      "index": 11948,
+      "source_sha256": "3e9e61bc2f189737c35bb42363f6e32bbafb878893662b9373fa6f5782e398d9",
+      "translation": "放大"
+    },
+    {
+      "index": 11950,
+      "source_sha256": "09d673fc5c839e891b2c9fdbd67f345ae5d93a17fe3c28accc46ce96199fc61f",
+      "translation": "缩小"
+    },
+    {
+      "index": 11951,
+      "source_sha256": "99a2f362d06eb81b7c00b8ca28361a25c181ead32a17992b7fa32e2f77690a9a",
+      "translation": "重置缩放"
+    },
+    {
+      "index": 11952,
+      "source_sha256": "32fd144c1f4b399d6437cdf06de3dbea637a981eb794a52930b392a91bd0527f",
+      "translation": "关闭窗口"
+    },
+    {
+      "index": 11953,
+      "source_sha256": "32fd144c1f4b399d6437cdf06de3dbea637a981eb794a52930b392a91bd0527f",
+      "translation": "关闭窗口"
+    },
+    {
+      "index": 11959,
+      "source_sha256": "32fd144c1f4b399d6437cdf06de3dbea637a981eb794a52930b392a91bd0527f",
+      "translation": "关闭窗口"
+    },
+    {
+      "index": 11966,
+      "source_sha256": "da85f8ddba1f3bb0f4d00062b366f8ff7be0bf394e6ca0fc583015a2918f0ea1",
+      "translation": "退出"
+    },
+    {
+      "index": 11968,
+      "source_sha256": "19734a1b58cabc22cae1f88493289ee94f40ff2b350f7f1b9f7011ea84096916",
+      "translation": "窗口"
+    },
+    {
+      "index": 11969,
+      "source_sha256": "73e89171520f1ac9a483f28968abbd18c698c18df01e8986f4d14b6ff28a29c3",
+      "translation": "控制切换到另一个工作区时是否显示确认对话框，以询问是保存还是放弃窗口中打开的无标题工作区。禁用确认对话框将始终放弃无标题工作区。"
+    },
+    {
+      "index": 11978,
+      "source_sha256": "23d3133a3a58198f65da21df518f5a1ed5c1baa995efaf256a77c0a4be8fb981",
+      "translation": "控制其中的窗口和编辑器在打开时的还原方式。"
+    },
+    {
+      "index": 11979,
+      "source_sha256": "7a0a5c5f1cdaf1abf4ac0271b179e48c45eefad72f78b1dd96705826c7463d3c",
+      "translation": "控制在全屏模式下退出时窗口是否应还原为全屏模式。"
+    },
+    {
+      "index": 11987,
+      "source_sha256": "0b368133aa7138c922c7c38f68cca886ab06639559e9bb56cc5d182013edcc18",
+      "translation": "控制在至少已打开一个窗口时打开新窗口的维度。请注意，此设置对打开的第一个窗口没有影响。第一个窗口将始终还原为你在关闭之前退出窗口时的大小和位置。"
+    },
+    {
+      "index": 11988,
+      "source_sha256": "7a2f19541980b46d129939a81f97b464b016dd1428cfd3ef49c75b89f55aa0e3",
+      "translation": "控制关闭最后一个编辑器时是否还应关闭该窗口。此设置仅适用于不显示文件夹的窗口。"
+    },
+    {
+      "index": 11990,
+      "source_sha256": "b4668efb3b06c0e177d805356c268e91635f4372956a8759053eaadf6e0d250f",
+      "translation": "设置标题栏使用操作系统原生样式还是自定义样式。在部分系统上也影响应用菜单和右键菜单。完整重启后生效。"
+    },
+    {
+      "index": 11992,
+      "source_sha256": "6cfa66dfb57b060fbeedc3695dc32d72c2e89d847661bf4b08f169ff4fe0bbde",
+      "translation": "将对话框的外观调整为操作系统或自定义的本机样式。"
+    },
+    {
+      "index": 11993,
+      "source_sha256": "34fc8b3f9dea1fb5d2ab5f630814b734a34fb30664e6ddd2de9948c40b14f833",
+      "translation": "启用 macOS 本机窗口选项卡。请注意，更改需要在完全重启后才能应用，并且本机选项卡将禁用自定义标题栏样式(如果已配置)。"
+    },
+    {
+      "index": 11994,
+      "source_sha256": "2aac54f3d17a2a93501e0601991ecaeb951163ac80c4e665c4eaab39bc127fc7",
+      "translation": "控制在 macOS 上是否应使用本机全屏。禁用此选项可防止 macOS 在全屏时创建新空间。"
+    },
+    {
+      "index": 11995,
+      "source_sha256": "d77303d5eb2787b3f40192024f0dd9304707329aae9a642a5291b9d8d8ab8e5a",
+      "translation": "启用后，点击非活动窗口后将在激活窗口的同时触发光标之下的元素 (若可点击)。禁用后，点击非活动窗口仅能激活窗口，再次点击才能触发元素。"
+    },
+    {
+      "index": 12000,
+      "source_sha256": "28038a9a803b43d38fa6c8611d220ed5bc385d1c0e1239ca796ff49153afb4db",
+      "translation": "启用键盘上的 macOS 触控栏按钮 (若可用)。"
+    },
+    {
+      "index": 12002,
+      "source_sha256": "85b2d91189d5e7cba0f01cebcb32df44b2ae6f12a8e90507bec0422e73f9117a",
+      "translation": "启用此参数后，每次即将通过协议处理程序打开本地文件或工作区时，都会弹出一个请求确认的对话框。"
+    },
+    {
+      "index": 12003,
+      "source_sha256": "eff645b9a5cc7c83be92e734405df14bf8fc1b0dbec1566965a2f2f8e9e141e2",
+      "translation": "启用此参数后，每次即将通过协议处理程序打开远程文件或工作区时，都会弹出一个请求确认的对话框。"
+    },
+    {
+      "index": 12027,
+      "source_sha256": "f67aa05c3df1b84dadd9a9bde49d655d3e1aa2b73cca3661575f455cf96d5ca7",
+      "translation": "复制"
+    },
+    {
+      "index": 12028,
+      "source_sha256": "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3",
+      "translation": "确定"
+    },
+    {
+      "index": 12031,
+      "source_sha256": "1569273953bc4f045a63e030786111d2aeab47da048b10351a5064609236ad2f",
+      "translation": "版权所有 © 2026 Anysphere。保留所有权利。"
+    },
+    {
+      "index": 12033,
+      "source_sha256": "6b983a81e5e8099e4e23a368e72636e31f029f2e691e5be714106b8cf59d70a7",
+      "translation": "重启"
+    },
+    {
+      "index": 12034,
+      "source_sha256": "6b983a81e5e8099e4e23a368e72636e31f029f2e691e5be714106b8cf59d70a7",
+      "translation": "重启"
+    },
+    {
+      "index": 12035,
+      "source_sha256": "6defafa2caa65304173956e3fbc26b6947c50bc769c08c3da32c1032fa6519d4",
+      "translation": "配置"
+    },
+    {
+      "index": 12036,
+      "source_sha256": "8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771",
+      "translation": "了解更多"
+    },
+    {
+      "index": 12040,
+      "source_sha256": "d6eafe82359100423c93c5ce53c352c1b51ca1e699215fcec3f5c5dd9bf12d24",
+      "translation": "下载"
+    },
+    {
+      "index": 12042,
+      "source_sha256": "1e8d18f62f2d2a2fcb2027969e109cad13bcf2a861737f80eabd6774406c8a10",
+      "translation": "打开文件"
+    },
+    {
+      "index": 12044,
+      "source_sha256": "920fde1f2a774f2c6b19592752b8276e69851a50d9dc0f8fea7c25eaa9d120fd",
+      "translation": "登录"
+    },
+    {
+      "index": 12049,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 12050,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 12064,
+      "source_sha256": "8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771",
+      "translation": "了解更多"
+    },
+    {
+      "index": 12066,
+      "source_sha256": "8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771",
+      "translation": "了解更多"
+    },
+    {
+      "index": 12069,
+      "source_sha256": "daee7606b339f3c339076fe2c9f372a3ff40c8ee896005d829c7481b64ca5303",
+      "translation": "重置"
+    },
+    {
+      "index": 12071,
+      "source_sha256": "74a883a037bc227f91891ab654a753d3a99f31ab06ae5b5d2b6e594a692b41f8",
+      "translation": "设置"
+    },
+    {
+      "index": 12211,
+      "source_sha256": "423e44de44431caef68c0c61968777e088fd50d2577feea60b9ba4a14b28a827",
+      "translation": "重新加载窗口"
+    },
+    {
+      "index": 12214,
+      "source_sha256": "423e44de44431caef68c0c61968777e088fd50d2577feea60b9ba4a14b28a827",
+      "translation": "重新加载窗口"
+    },
+    {
+      "index": 12222,
+      "source_sha256": "0762d9319e212a62cf0fc987bce1ccaf5e373195d3dbfdb980765888b229d104",
+      "translation": "不要打开"
+    },
+    {
+      "index": 12246,
+      "source_sha256": "73938ee7787d6e4afd490c482f9edc70b2890bf31e3bca1ecc71ac7fb29bc76e",
+      "translation": "为避免再次出现此问题，请确保已允许此网站显示弹出窗口。"
+    },
+    {
+      "index": 12413,
+      "source_sha256": "ff8059dc6752afdd30d275932b1d5031a2ec854b387a8c57ecc6689915293a43",
+      "translation": "操作"
+    },
+    {
+      "index": 12439,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 12447,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 12463,
+      "source_sha256": "ff8059dc6752afdd30d275932b1d5031a2ec854b387a8c57ecc6689915293a43",
+      "translation": "操作"
+    },
+    {
+      "index": 12490,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 12498,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 12504,
+      "source_sha256": "f43ec47200e42cf49d7bb5c77c4e31a298ea4d4e772eb112ed292db368960277",
+      "translation": "管理实验覆盖配置"
+    },
+    {
+      "index": 12514,
+      "source_sha256": "ff8059dc6752afdd30d275932b1d5031a2ec854b387a8c57ecc6689915293a43",
+      "translation": "操作"
+    },
+    {
+      "index": 12515,
+      "source_sha256": "fe6d4149745233cdb93c69caf8aa32d625f89c0d8c0bb4719ec7bdb272cf601a",
+      "translation": "刷新 Statsig 配置"
+    },
+    {
+      "index": 12517,
+      "source_sha256": "5186b10023b41b0f84659b752684e4a79e65eff1987456ec8e1ed7a7fd799577",
+      "translation": "将所有功能开关恢复为内置值"
+    },
+    {
+      "index": 12524,
+      "source_sha256": "fe6d4149745233cdb93c69caf8aa32d625f89c0d8c0bb4719ec7bdb272cf601a",
+      "translation": "刷新 Statsig 配置"
+    },
+    {
+      "index": 12528,
+      "source_sha256": "5186b10023b41b0f84659b752684e4a79e65eff1987456ec8e1ed7a7fd799577",
+      "translation": "将所有功能开关恢复为内置值"
+    },
+    {
+      "index": 12549,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 12557,
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "translation": "取消"
+    },
+    {
+      "index": 12661,
+      "source_sha256": "cdc93446fdc27650b09314c7841ae506788feb842946607f2a47d04082058eb4",
+      "translation": "重启"
+    },
+    {
+      "index": 12662,
+      "source_sha256": "8c31e6e7223097e2e4847773c47a4efab6aaf79deeecc92a7759891c74976dde",
+      "translation": "本地"
+    },
+    {
+      "index": 12663,
+      "source_sha256": "ffa98e02f7ce33fc935f02b3b668f6ad57661814dade5f41453fbee2b70cdd95",
+      "translation": "远程"
+    },
+    {
+      "index": 12692,
+      "source_sha256": "b46c90d032897a1988aa2eb4965d97723611a8de6bad74d947c5c171cf212dc9",
+      "translation": "在文件资源管理器中显示"
+    },
+    {
+      "index": 12788,
+      "source_sha256": "ab4842b3329312b041dfe82b6e98caabfa995557c48e3c1ec83a71c8ef7ddef0",
+      "translation": "扩展已在磁盘上被修改。请重新加载窗口。"
+    },
+    {
+      "index": 12789,
+      "source_sha256": "423e44de44431caef68c0c61968777e088fd50d2577feea60b9ba4a14b28a827",
+      "translation": "重新加载窗口"
+    },
+    {
+      "index": 12791,
+      "source_sha256": "423e44de44431caef68c0c61968777e088fd50d2577feea60b9ba4a14b28a827",
+      "translation": "重新加载窗口"
+    },
+    {
+      "index": 12802,
+      "source_sha256": "6bfdb2d8df158b7e1d14213736c6d9a824f27a1db01be5fa6814241d5bc147c2",
+      "translation": "启动扩展二分排查"
+    },
+    {
+      "index": 12804,
+      "source_sha256": "ac4005c12a3a62da69d1d7aa2c91dce2cde5d05ac028ae5b6cce2b60eb7fe6b6",
+      "translation": "重启扩展宿主"
+    },
+    {
+      "index": 12805,
+      "source_sha256": "8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771",
+      "translation": "了解更多"
+    },
+    {
+      "index": 12806,
+      "source_sha256": "eca4ce0c19a1e3bc7d31954ea6cd084cf3a1a2134daa9cbff61b89628060e740",
+      "translation": "扩展宿主在过去 5 分钟内意外终止了 3 次。"
+    },
+    {
+      "index": 12809,
+      "source_sha256": "1a2303ede07493acc7caaa7c737f3c52bcc9cf04372be19ed1b0af6b9f2c791e",
+      "translation": "连接"
+    },
+    {
+      "index": 12818,
+      "source_sha256": "ac4005c12a3a62da69d1d7aa2c91dce2cde5d05ac028ae5b6cce2b60eb7fe6b6",
+      "translation": "重启扩展宿主"
+    },
+    {
+      "index": 12830,
+      "source_sha256": "cae7d57bc067a514b8e34c9589631a95c7dc051638ddd2a190773269279a99df",
+      "translation": "停止"
+    },
+    {
+      "index": 12831,
+      "source_sha256": "a7cd1395b365aec5023fb0a73c6409f3dff6617ca5345b84a0f8b344957a14bf",
+      "translation": "停止录制"
+    },
+    {
+      "index": 12833,
+      "source_sha256": "192c0e5be35a05f022e0f63e82f242725d934c86aee796ff75fad64c36fef8b0",
+      "translation": "打开记录文件夹"
+    },
+    {
+      "index": 12835,
+      "source_sha256": "d3354d13096603a97fd6d9aa4f5455de55d6a422a4612ef2df1877b7118033cc",
+      "translation": "开始文件监视录制"
+    },
+    {
+      "index": 12922,
+      "source_sha256": "cdc93446fdc27650b09314c7841ae506788feb842946607f2a47d04082058eb4",
+      "translation": "重启"
+    },
+    {
+      "index": 12935,
+      "source_sha256": "3f44d0c13e5c32868ada9a2ec208b8a3bf23941e23ee2cc9873f802cfd49ba85",
+      "translation": "VS Code 设置"
+    },
+    {
+      "index": 12981,
+      "source_sha256": "48845bff334a50a59aaecf499f28a7a24c3b4b891b8b18a9f1169ad8e8a6b261",
+      "translation": "关闭"
+    },
+    {
+      "index": 12998,
+      "source_sha256": "1744b96470b51bf30935e2748b237a708d226a0430063f92accf90961cd28d86",
+      "translation": "网络"
+    },
+    {
+      "index": 13024,
+      "source_sha256": "a00644508de97e85263c9d0cd67e63d3c3b5d733bcaddc65b110e501ad5a7b73",
+      "translation": "{0}"
+    },
+    {
+      "index": 13499,
+      "source_sha256": "83809bb17004f79d0d6f145240a3a196368954a3fa948f8546bb38bc7e665161",
+      "translation": "确定"
+    },
+    {
+      "index": 13500,
+      "source_sha256": "d4919c9bb0ad42044ec28bcb9ab6b82c0a8aed3b1ecdb36d4cd795df0df6d267",
+      "translation": "仍然关闭"
+    },
+    {
+      "index": 13501,
+      "source_sha256": "5dea7657ba76c421b2382fa73ae51acaa2e84e53b2b2598a3273feb10645647c",
+      "translation": "仍要退出"
+    },
+    {
+      "index": 13511,
+      "source_sha256": "d8b8392e2c542950ca64867168e4ef87d4ad606882d5898f826b51c6d553988f",
+      "translation": "重试"
+    },
+    {
+      "index": 13519,
+      "source_sha256": "e8011ef6776c1d60657ce1357b9ee9ceeb29e28b5438b608dff660cf195813fb",
+      "translation": "是否要将工作区配置保存为文件？"
+    },
+    {
+      "index": 13520,
+      "source_sha256": "80547e1e50828be2f10dd4f24dd626f59616096cf4df1c49329e402a04727afd",
+      "translation": "若计划再次打开，请保存工作区。"
+    },
+    {
+      "index": 13521,
+      "source_sha256": "9050a38dd910b29c3721adbe249c15c247af33b91b5dc413a8e512e0199c3e09",
+      "translation": "保存"
+    },
+    {
+      "index": 13522,
+      "source_sha256": "ce64079b00e10dd5887f5df6148c053cad94f0fbcba0244100a08d1d7e473c5e",
+      "translation": "不保存"
+    },
+    {
+      "index": 13523,
+      "source_sha256": "673b5faac944950a8f55bf4fe436a0255b434358045d35389b205ff746ebf017",
+      "translation": "始终直接丢弃未命名工作区，不再询问"
+    }
+  ],
+  "after_sha256": "abd0812815943e2d9c5720335674fda36c9473d7035021a6826d5ce79c4e7ea1"
+}
