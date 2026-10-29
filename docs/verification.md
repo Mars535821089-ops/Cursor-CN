@@ -29,6 +29,8 @@ python3 scripts/integration_check.py --original-app "/path/to/Original Cursor.ap
 
 集成测试会创建并在成功后清理自己的临时测试目录，不修改或启动输入应用。失败时保留它自己创建的临时副本以便检查，原输入仍保持不变。
 
+`install.py check-update` 和 `install.py preview` 是本地只读检查，不联系 Cursor 更新服务器，也不对未知构建尝试迁移。它们会核对应用版本、构建提交和目标文件 SHA-256；预览仅在文件与当前受支持原版完全匹配时生成字节差异片段。新版本必须先由维护者审核并更新 profile 与补丁，因此本检查不代表自动适配未来版本。
+
 ## 不能从这些测试推出的结论
 
 - 不能推出 Windows、Linux、Intel Mac 或其它 Cursor 构建可用。

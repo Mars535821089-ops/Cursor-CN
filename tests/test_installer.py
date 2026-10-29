@@ -6,7 +6,8 @@ import unittest
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / 'scripts'))
 from patch_engine import PatchError, create_delta, sha256
-from install import classify_app, snapshot_settings, restore_settings, update_checksums, read_object
+from install import (classify_app, maintenance_report, preview_report, snapshot_settings,
+                     restore_settings, update_checksums, read_object)
 
 
 class InstallerTests(unittest.TestCase):
@@ -59,6 +60,38 @@ class InstallerTests(unittest.TestCase):
             app,root,profile,files=self.fixture(d)
             (root/'package.json').write_text(json.dumps({'version':'9.0.0'}))
             with self.assertRaises(PatchError):classify_app(app,profile,files)
+
+    def test_update_check_reports_new_version_without_modifying_it(self):
+        with tempfile.TemporaryDirectory() as d:
+            app,root,profile,files=self.fixture(d)
+            (root/'package.json').write_text(json.dumps({'version':'9.0.0'}))
+            before=(root/'out/main.js').read_bytes()
+            report=maintenance_report(app,profile,files)
+            self.assertEqual(report['state'],'unsupported_version')
+            self.assertFalse(report['supported'])
+            self.assertTrue(report['no_changes_made'])
+            self.assertEqual((root/'out/main.js').read_bytes(),before)
+
+    def test_preview_shows_exact_patch_hunks_without_writing(self):
+        with tempfile.TemporaryDirectory() as d:
+            app,root,profile,files=self.fixture(d)
+            before=(root/'out/main.js').read_bytes()
+            report=preview_report(app,profile,files)
+            self.assertTrue(report['preview_available'])
+            self.assertTrue(report['requires_local_resigning'])
+            self.assertEqual(report['diffs'][0]['edits'][0]['removed'],'original')
+            self.assertEqual(report['diffs'][0]['edits'][0]['inserted'],'localized')
+            self.assertEqual((root/'out/main.js').read_bytes(),before)
+
+    def test_preview_refuses_unrecognized_source(self):
+        with tempfile.TemporaryDirectory() as d:
+            app,root,profile,files=self.fixture(d)
+            (root/'out/main.js').write_bytes(b'unknown')
+            report=preview_report(app,profile,files)
+            self.assertFalse(report['preview_available'])
+            self.assertEqual(report['state'],'unknown_source')
+            self.assertEqual(report['diffs'],[])
+            self.assertEqual((root/'out/main.js').read_bytes(),b'unknown')
 
     def test_checksummed_metadata_not_replaced_wholesale(self):
         with tempfile.TemporaryDirectory() as d:

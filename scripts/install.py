@@ -16,7 +16,7 @@ import tempfile
 import time
 import uuid
 
-from patch_engine import PatchError, apply_tree, atomic_write, safe_path, sha256
+from patch_engine import PatchError, apply_bytes, apply_tree, atomic_write, safe_path, sha256
 from runtime_build import ROOT, build_nls, build_runtime, extract_zip, fetch_verified, load_profile, read_patch
 
 
@@ -103,6 +103,95 @@ def classify_app(app, profile, files):
     if originals and not runtime.exists():
         return 'original'
     raise PatchError('应用文件不匹配原版或已审核补丁，拒绝覆盖；请先恢复对应官方版本')
+
+
+def maintenance_report(app, profile, files):
+    """Report the local app fingerprint without modifying it or accepting unknown builds."""
+    app = pathlib.Path(app)
+    if app.is_symlink():
+        raise PatchError('请指定实际应用目录，不接受应用符号链接')
+    root = app_root(app)
+    package = read_object(root/'package.json')
+    product = read_object(root/'product.json')
+    version_matches = package.get('version') == profile['cursor_version']
+    commit_matches = product.get('commit') == profile['cursor_commit']
+    targets = []
+    originals = patched = True
+    for relative, patch in files.items():
+        path = safe_path(root, relative)
+        digest = sha256(path.read_bytes()) if path.is_file() else None
+        is_original = digest == patch['before_sha256']
+        is_patched = digest == patch['after_sha256']
+        originals &= is_original
+        patched &= is_patched
+        targets.append({
+            'path': relative,
+            'status': 'original' if is_original else 'patched' if is_patched else 'unknown' if digest else 'missing',
+            'actual_sha256': digest,
+            'expected_original_sha256': patch['before_sha256'],
+            'expected_patched_sha256': patch['after_sha256'],
+        })
+    runtime = safe_path(root, profile['runtime_path'])
+    runtime_digest = sha256(runtime.read_bytes()) if runtime.is_file() else None
+    metadata_matches = version_matches and commit_matches
+    if not metadata_matches:
+        state = 'unsupported_version'
+    elif originals and not runtime.exists():
+        state = 'original'
+    elif patched and runtime_digest == profile['runtime_sha256']:
+        state = 'patched'
+    else:
+        state = 'unknown_source'
+    return {
+        'state': state,
+        'supported': state in {'original', 'patched'},
+        'expected': {'version': profile['cursor_version'], 'commit': profile['cursor_commit']},
+        'observed': {'version': package.get('version'), 'commit': product.get('commit')},
+        'runtime': {
+            'path': profile['runtime_path'],
+            'actual_sha256': runtime_digest,
+            'expected_sha256': profile['runtime_sha256'],
+        },
+        'targets': targets,
+        'no_changes_made': True,
+    }
+
+
+def preview_report(app, profile, files):
+    """Build a bounded, read-only preview of the exact localized byte edits."""
+    report = maintenance_report(app, profile, files)
+    report['preview_available'] = report['state'] in {'original', 'patched'}
+    report['diffs'] = []
+    if report['state'] != 'original':
+        return report
+    root = app_root(app)
+    for relative, patch in files.items():
+        source = safe_path(root, relative).read_bytes()
+        apply_bytes(source, patch)
+        changes = []
+        for edit in patch['edits']:
+            start, end = edit['start'], edit['end']
+            inserted = base64.b64decode(edit['data'], validate=True)
+            context_before = source[max(0, start - 60):start]
+            removed = source[start:end]
+            context_after = source[end:min(len(source), end + 60)]
+            changes.append({
+                'offset': start,
+                'context_before': context_before.decode('utf-8', errors='backslashreplace'),
+                'removed': removed.decode('utf-8', errors='backslashreplace')[:240],
+                'inserted': inserted.decode('utf-8', errors='backslashreplace')[:240],
+                'context_after': context_after.decode('utf-8', errors='backslashreplace'),
+                'truncated': len(removed) > 240 or len(inserted) > 240,
+            })
+        if changes:
+            report['diffs'].append({
+                'path': relative,
+                'before_sha256': patch['before_sha256'],
+                'after_sha256': patch['after_sha256'],
+                'edits': changes,
+            })
+    report['requires_local_resigning'] = bool(report['diffs'])
+    return report
 
 
 def update_checksums(root):
@@ -394,7 +483,7 @@ def restore(args):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description='Cursor-汉化中文补丁：精确版本安装、检查及独立恢复')
-    parser.add_argument('action',choices=['status','install','prepare','restore'])
+    parser.add_argument('action',choices=['status','check-update','preview','install','prepare','restore'])
     parser.add_argument('--app',type=pathlib.Path,default=pathlib.Path('/Applications/Cursor.app'))
     parser.add_argument('--user-data',type=pathlib.Path,default=DEFAULT_DATA)
     parser.add_argument('--backup-root',type=pathlib.Path,default=DEFAULT_BACKUPS)
@@ -418,11 +507,15 @@ def main(argv=None):
     profile = load_profile()
     files = read_patch(profile['app_patch'])['files']
     args.app = args.app.expanduser().absolute()
+    if args.action in {'status', 'check-update', 'preview'}:
+        report = (preview_report(args.app, profile, files) if args.action == 'preview'
+                  else maintenance_report(args.app, profile, files))
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        if not report['supported']:
+            raise SystemExit(2)
+        return
     state = classify_app(args.app,profile,files)
-    if args.action=='status':
-        print(json.dumps({'cursor_version':profile['cursor_version'],'state':state,
-                          'resources_match':True,'no_changes_made':True},ensure_ascii=False,indent=2))
-    elif args.action=='prepare':
+    if args.action=='prepare':
         if not args.output:
             parser.error('prepare 需要 --output，目标必须不存在')
         args.cache.mkdir(parents=True,exist_ok=True)

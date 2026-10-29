@@ -88,6 +88,19 @@ python3 scripts/install.py install --app "$HOME/Applications/Cursor.app" --quit-
 
 本仓库中的 `scripts/` 包含安装、补丁生成/应用、离线语言资源构建、完整性检查、恢复和归档的源码；`patches/` 包含此版本的差异数据与中文覆盖词条；`tests/`、`docs/` 和 `.github/workflows/` 分别提供自动测试、验收记录与持续集成。下载 ZIP 与仓库源码由同一批已提交文件生成。
 
+### Cursor 更新后的检查与预览
+
+目前确认可用的是 VS Code 兼容的简体中文语言包；Cursor 专属界面仍需对指定应用资源打精确差异补丁。没有找到可替代该补丁、且由 Cursor 官方承诺更新兼容的完整本地化扩展接口，因此不能承诺 Cursor 更新后免维护。补丁会更改隔离副本中的应用资源并重新本地签名；它不会保留原厂签名，也不应直接用于原版应用或期待原生更新器无缝更新。
+
+每次 Cursor 更新前先恢复原版。更新完成后，可先对新版本执行只读检查和预览：
+
+```bash
+python3 scripts/install.py check-update --app "/Applications/Cursor.app"
+python3 scripts/install.py preview --app "/Applications/Cursor.app"
+```
+
+两条命令输出机器可读 JSON，包含版本、构建提交、每个目标文件及运行时资源的 SHA-256。`preview` 对已知原版只展示精确补丁的字节范围和有限长度的变更片段，不写入文件；已安装补丁则报告没有待应用差异。遇到新版本、未知源码、缺失文件或部分修改时会明确标记不支持，退出码为 2，不提供猜测性补丁，也不替换任何文件。此检查读取本机应用，不查询 Cursor 更新服务器；新版本仍需维护者审核并发布新指纹和差异数据。
+
 这里的“源码”指本补丁项目可公开分发的全部实现与数据，不包括 Cursor 或第三方语言包的原始程序、完整上游工具以及本机私人巡检材料。
 
 ```bash
