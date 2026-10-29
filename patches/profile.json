@@ -55,6 +55,11 @@
     "patches/app-3.24.18-arm64.json.gz": "43c6838b06f5c7f13b12d575669018412e1fc57f2feff531ef490757b3c2d238",
     "patches/nls-overrides.json": "72cbd50355967a6f7410b7ad2c4c3134e6d351dfac77355f71ccf605670da87c",
     "patches/runtime-safety.json.gz": "8e73a1321338cc6456f734c990c09bccce90e5973ba01fa161e4f42e91a4f75e",
-    "patches/upstream-customizations.json.gz": "dc356ade85f9ca5d13ef794f97f26cf22185238e5f36daa896aa6ff763b1eb00"
-  }
+    "patches/upstream-customizations.json.gz": "dc356ade85f9ca5d13ef794f97f26cf22185238e5f36daa896aa6ff763b1eb00",
+    "patches/ui-review-3.24.18.json.gz": "189cd8e7d31ad89cb88e16856b17ac665b8ea4e7cc39e744a2c12d86162769c7",
+    "patches/reviewed-ui.json": "54ae8f73c9212ac592fbb381204e879fcf301acc17f59d802a243f3b2b41fdd7"
+  },
+  "reviewed_nls_sha256": "2f2456cc16edf4bddc6aee19d10c2614194cc9c4e807ca0b92b3cf2415972f6b",
+  "ui_review_patch": "patches/ui-review-3.24.18.json.gz",
+  "ui_review_dictionary": "patches/reviewed-ui.json"
 }

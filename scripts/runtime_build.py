@@ -12,6 +12,7 @@ import urllib.request
 import zipfile
 
 from patch_engine import PatchError, apply_bytes, apply_tree, atomic_write, sha256
+from ui_review import load_translations, review_nls
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -29,6 +30,30 @@ def load_profile(root=ROOT):
 
 def read_patch(relative, root=ROOT):
     return json.loads(gzip.decompress((root / relative).read_bytes()))
+
+
+def load_app_patch(profile, root=ROOT):
+    files = read_patch(profile['app_patch'], root)['files']
+    if 'ui_review_patch' in profile:
+        for relative, patch in read_patch(profile['ui_review_patch'], root)['files'].items():
+            if relative not in files:
+                files[relative] = {
+                    'before_sha256': patch['before_sha256'], 'after_sha256': patch['before_sha256'],
+                    'before_size': patch['before_size'], 'after_size': patch['before_size'], 'edits': [],
+                }
+    return files
+
+
+def load_ui_review(profile, files, root=ROOT):
+    if 'ui_review_patch' not in profile:
+        return {}
+    reviewed = (profile['ui_review_files'] if 'ui_review_files' in profile
+                else read_patch(profile['ui_review_patch'], root)['files'])
+    for relative, patch in reviewed.items():
+        if (relative not in files or patch['before_sha256'] != files[relative]['after_sha256']
+                or patch['before_size'] != files[relative]['after_size']):
+            raise PatchError('UI review delta does not chain to the audited base patch')
+    return reviewed
 
 
 def fetch_verified(spec, cache):
@@ -128,7 +153,7 @@ def build_runtime(profile, app, cache, root=ROOT):
     return result
 
 
-def build_nls(app, vsix, overlay):
+def build_nls(app, vsix, overlay, profile=None, root=ROOT):
     app_root = pathlib.Path(app) / 'Contents/Resources/app'
     keys = json.loads((app_root / 'out/nls.keys.json').read_text())
     english = json.loads((app_root / 'out/nls.messages.json').read_text())
@@ -150,4 +175,9 @@ def build_nls(app, vsix, overlay):
     encoded = json.dumps(result, ensure_ascii=False, separators=(',', ':')).encode()
     if sha256(encoded) != overlay['after_sha256']:
         raise PatchError('语言包重建校验失败')
+    if profile and 'ui_review_dictionary' in profile:
+        result, _ = review_nls(result, result, load_translations(root/profile['ui_review_dictionary'], include_nls=True))
+        encoded = json.dumps(result, ensure_ascii=False, separators=(',', ':')).encode()
+        if sha256(encoded) != profile['reviewed_nls_sha256']:
+            raise PatchError('UI review language resource fingerprint mismatch')
     return encoded

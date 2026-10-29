@@ -27,3 +27,5 @@ jobs:
         run: python scripts/check_release.py
       - name: 启动脚本语法
         run: bash -n install.sh scripts/launch.sh ./*.command
+      - name: 只读 UI 审计工具语法
+        run: node --check scripts/audit_ui.cjs && node --check scripts/verify_ui_review.cjs

@@ -31,6 +31,48 @@ python3 scripts/integration_check.py --original-app "/path/to/Original Cursor.ap
 
 `install.py check-update` 和 `install.py preview` 是本地只读检查，不联系 Cursor 更新服务器，也不对未知构建尝试迁移。它们会核对应用版本、构建提交和目标文件 SHA-256；预览仅在文件与当前受支持原版完全匹配时生成字节差异片段。新版本必须先由维护者审核并更新 profile 与补丁，因此本检查不代表自动适配未来版本。
 
+## 源码级漏译复查的新增证据
+
+本轮针对 Cursor 3.24.18、构建 `be4c9e5350d77747b42cd467cbd3370a753d4640`，仅以只读方式检查应用文件：
+
+| 项目 | 实际范围 / 结果 |
+| --- | --- |
+| JavaScript | 全部 46 个打包 `out/` JS，已有注入运行时单独按原有哈希校验，不重复列入扫描 |
+| 内置扩展 | 盘点 116 个清单；深入解析 Cursor 自有扩展 19 个清单及 4 个默认语言资源 |
+| AST 统计 | 1,090,623 个字符串字面量、47,481 个模板字面量；界面位置识别是启发式，不等于逐条人工审核 |
+| 新增源码修正 | 27 个资源、799 个已审核界面字面量：6 个 JS 的 752 处及 21 个扩展 JSON 的 47 处 |
+| NLS | 13,530 条基准消息中，新增修正 916 处；保留已有译文和未列入审核词典的内容 |
+| 剩余候选 | 644 个动态界面模板候选；最终 NLS 中 567 条纯英文候选，包含保留项及待审核文案，不冒充已全部译完 |
+| 真实资源结构检查 | 27 个资源均在内存中应用补丁、复验前后 SHA-256、重新解析，非字符串 token 和字符串节点数量不变 |
+| 自动回归 | 35 个 Python 测试；发布完整性 / 隐私扫描、Node 和 shell 语法检查 |
+
+`scripts/audit_ui.cjs` 使用目标应用随附的 Acorn，仅解析源码，不执行应用逻辑。它定位标签、描述、提示、ARIA、按钮、枚举说明等属性与相关 DOM 调用，并为人工复核保留动态模板候选。英文不等于漏译，不能自动翻译所有字符串。扩展清单按 JSON 和 AST 双重解析；补丁只改已确认的显示值，不更改命令 ID、设置键、枚举值或 JSON 结构。
+
+只读审计、补丁结构验证的命令如下（仅维护者需要 Node.js；普通安装不需要）：
+
+```bash
+node --max-old-space-size=12000 scripts/audit_ui.cjs \
+  --app "/path/to/Audited Cursor.app" --output "/path/to/new-audit.json"
+node --max-old-space-size=12000 scripts/verify_ui_review.cjs \
+  --app "/path/to/Audited Cursor.app" --output "/path/to/new-verification.json"
+```
+
+输入应为旧基准补丁状态的已审核副本，而非任意修改后的应用；验证器会核对具体文件指纹。报告拒绝覆盖已有文件或写入应用内部；其中候选可能包含程序文本，仅在本地保留，不随仓库发布。
+
+维护者复审词典后可重建补丁：
+
+```bash
+python3 scripts/build_ui_review.py \
+  --app "/path/to/Audited Cursor.app" --audit "/path/to/new-audit.json" \
+  --nls-cache "/path/to/Verified Baseline/nls.messages.json"
+```
+
+生成器要求 NLS 基准文件的完整 SHA-256 与原有 `nls-overrides.json` 一致；新 NLS 再锁定最终 SHA-256。源码差异先接原有补丁，再应用审核补丁；新增目标资源先以相同输入/输出哈希的空补丁纳入预检。安装器只在副本上修改，恢复清单内嵌整条补丁链，并复制独立恢复所需模块。更新基准补丁而没有重新审核时，发布生成器明确报错，不静默丢弃补漏。
+
+**本轮没有重新执行原厂副本的完整安装 / 签名 / GUI / 恢复集成测试。** 本机现有 NLS 原文有历史修改，用固定版本语言包重建时与原有中文基准有 22 项差异，不能通过原有 NLS 基准哈希，因此不能把它当作未修改原厂应用。本轮使用完整哈希匹配的旧中文缓存验证新增 NLS 结果，没有放宽安装器校验。上面的历史 `integration-report.json` 不代表新增补丁链已通过真实应用安装；目前证据是单元回归、真实资源只读重建及结构检查。没有改写应用、重新签名、启动应用或读取账号与聊天数据库。
+
+动态模板、混合语言 HTML、远端下发 UI、第三方扩展运行时以及所有交互分支仍未完成逐项实机验收。扫描覆盖不等于“完整汉化”，剩余候选仍需继续审核。
+
 ## 不能从这些测试推出的结论
 
 - 不能推出 Windows、Linux、Intel Mac 或其它 Cursor 构建可用。

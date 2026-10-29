@@ -9,7 +9,7 @@ import sys
 import tempfile
 
 from patch_engine import sha256
-from runtime_build import ROOT,load_profile,read_patch
+from runtime_build import ROOT,load_app_patch,load_profile,read_patch
 
 
 def main():
@@ -19,7 +19,7 @@ def main():
     args=parser.parse_args()
     if platform.system()!='Darwin' or platform.machine()!='arm64':
         raise SystemExit('Integration test requires macOS Apple Silicon.')
-    profile=load_profile();files=read_patch(profile['app_patch'])['files']
+    profile=load_profile();files=load_app_patch(profile)
     source_root=args.original_app/'Contents/Resources/app'
     before={rel:sha256((source_root/rel).read_bytes()) for rel in files}
     assert all(before[rel]==record['before_sha256'] for rel,record in files.items()),'Input must be the exact supported original'

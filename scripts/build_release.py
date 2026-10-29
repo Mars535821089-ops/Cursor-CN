@@ -11,7 +11,7 @@ import subprocess
 import sys
 import zipfile
 
-from patch_engine import create_delta, sha256
+from patch_engine import PatchError, create_delta, sha256
 from runtime_build import raw_runtime, build_nls
 
 
@@ -26,6 +26,7 @@ def main():
     args = parser.parse_args()
     root = pathlib.Path(__file__).resolve().parents[1]
     patches = root / 'patches'
+    previous_profile = json.loads((patches/'profile.json').read_text())
     original = args.original_app / 'Contents/Resources/app'
     current = args.patched_app / 'Contents/Resources/app'
     relative_files = ['out/main.js', 'out/vs/workbench/workbench.desktop.main.js',
@@ -89,8 +90,15 @@ def main():
     for p in sorted(patches.iterdir()):
         if p.name != 'profile.json' and p.is_file():
             profile['artifacts'][p.relative_to(root).as_posix()] = sha256(p.read_bytes())
+    if 'ui_review_patch' in previous_profile:
+        for name in ['app_patch', 'nls_overlay']:
+            relative = previous_profile[name]
+            if profile['artifacts'].get(relative) != previous_profile['artifacts'][relative]:
+                raise PatchError('Base resources changed; regenerate and audit the UI review before publishing')
+        for name in ['ui_review_patch', 'ui_review_dictionary', 'reviewed_nls_sha256']:
+            profile[name] = previous_profile[name]
     (patches/'profile.json').write_text(json.dumps(profile, ensure_ascii=False, indent=2)+'\n')
-    assert build_nls(args.original_app, vsix, nls)
+    assert build_nls(args.original_app, vsix, nls, profile)
     print('RELEASE_PAYLOADS', {p.name:p.stat().st_size for p in patches.iterdir()}, flush=True)
 
 

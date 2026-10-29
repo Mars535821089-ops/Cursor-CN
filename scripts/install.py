@@ -17,7 +17,8 @@ import time
 import uuid
 
 from patch_engine import PatchError, apply_bytes, apply_tree, atomic_write, safe_path, sha256
-from runtime_build import ROOT, build_nls, build_runtime, extract_zip, fetch_verified, load_profile, read_patch
+from runtime_build import (ROOT, build_nls, build_runtime, extract_zip, fetch_verified,
+                           load_app_patch, load_profile, load_ui_review, read_patch)
 
 
 SETTINGS = ('locale.json', 'User/locale.json', 'argv.json', 'languagepacks.json')
@@ -91,11 +92,12 @@ def classify_app(app, profile, files):
     if package.get('version') != profile['cursor_version'] or product.get('commit') != profile['cursor_commit']:
         raise PatchError('此补丁仅支持 Cursor '+profile['cursor_version']+' 的已验证构建；未修改应用')
     originals = patched = True
+    reviewed = load_ui_review(profile, files)
     for rel, patch in files.items():
         path = safe_path(root, rel)
         digest = sha256(path.read_bytes()) if path.is_file() else None
         originals &= digest == patch['before_sha256']
-        patched &= digest == patch['after_sha256']
+        patched &= digest == reviewed.get(rel, patch)['after_sha256']
     runtime = safe_path(root, profile['runtime_path'])
     runtime_ok = runtime.is_file() and sha256(runtime.read_bytes()) == profile['runtime_sha256']
     if patched and runtime_ok:
@@ -117,11 +119,12 @@ def maintenance_report(app, profile, files):
     commit_matches = product.get('commit') == profile['cursor_commit']
     targets = []
     originals = patched = True
+    reviewed = load_ui_review(profile, files)
     for relative, patch in files.items():
         path = safe_path(root, relative)
         digest = sha256(path.read_bytes()) if path.is_file() else None
         is_original = digest == patch['before_sha256']
-        is_patched = digest == patch['after_sha256']
+        is_patched = digest == reviewed.get(relative, patch)['after_sha256']
         originals &= is_original
         patched &= is_patched
         targets.append({
@@ -129,7 +132,7 @@ def maintenance_report(app, profile, files):
             'status': 'original' if is_original else 'patched' if is_patched else 'unknown' if digest else 'missing',
             'actual_sha256': digest,
             'expected_original_sha256': patch['before_sha256'],
-            'expected_patched_sha256': patch['after_sha256'],
+            'expected_patched_sha256': reviewed.get(relative, patch)['after_sha256'],
         })
     runtime = safe_path(root, profile['runtime_path'])
     runtime_digest = sha256(runtime.read_bytes()) if runtime.is_file() else None
@@ -165,8 +168,13 @@ def preview_report(app, profile, files):
     if report['state'] != 'original':
         return report
     root = app_root(app)
-    for relative, patch in files.items():
+    reviewed = load_ui_review(profile, files)
+    phases = [(relative, patch, 'base') for relative, patch in files.items()]
+    phases += [(relative, patch, 'ui-review') for relative, patch in reviewed.items()]
+    for relative, patch, phase in phases:
         source = safe_path(root, relative).read_bytes()
+        if phase == 'ui-review':
+            source = apply_bytes(source, files[relative])
         apply_bytes(source, patch)
         changes = []
         for edit in patch['edits']:
@@ -186,6 +194,7 @@ def preview_report(app, profile, files):
         if changes:
             report['diffs'].append({
                 'path': relative,
+                'phase': phase,
                 'before_sha256': patch['before_sha256'],
                 'after_sha256': patch['after_sha256'],
                 'edits': changes,
@@ -302,6 +311,7 @@ def prepare_app(app, output, profile, cache, files, backup_id=None):
     clone_app(app,output)
     root = app_root(output)
     apply_tree(root,files)
+    apply_tree(root,load_ui_review(profile,files))
     atomic_write(safe_path(root,profile['runtime_path']),runtime,mode=0o644)
     if backup_id:
         atomic_write(root/'cursor-chinese-patch.json',json_bytes({
@@ -337,8 +347,8 @@ def language_plan(backup, data, profile, cache):
         atomic_write(path,json_bytes({'version':'1.0.0','contents':{'package':text}}))
         translations[name] = str(path)
     overlay = read_object(ROOT/profile['nls_overlay'])
-    messages = build_nls(pathlib.Path(profile['_source_app']),vsix,overlay)
-    digest = sha256((profile['patch_version']+profile['language_pack']['sha256']+overlay['after_sha256']).encode())[:32]
+    messages = build_nls(pathlib.Path(profile['_source_app']),vsix,overlay,profile)
+    digest = sha256((profile['patch_version']+profile['language_pack']['sha256']+sha256(messages)).encode())[:32]
     cache_root = 'clp/'+digest+'.zh-cn/'
     messages_rel = cache_root+profile['cursor_commit']+'/nls.messages.json'
     tcf_rel = cache_root+'tcf.json'
@@ -365,6 +375,7 @@ def recovery_launcher(backup):
     shutil.copy2(__file__,backup/'install.py')
     shutil.copy2(ROOT/'scripts/patch_engine.py',backup/'patch_engine.py')
     shutil.copy2(ROOT/'scripts/runtime_build.py',backup/'runtime_build.py')
+    shutil.copy2(ROOT/'scripts/ui_review.py',backup/'ui_review.py')
     command = '''#!/bin/bash
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -396,6 +407,8 @@ def install(args,profile,files):
     manifest = {'schema':1,'state':'preparing','app':str(app),'original_app':str(original),
                 'user_data':str(data),'profile':profile,'files':files,'settings':{}}
     manifest['profile'] = {k:v for k,v in profile.items() if not k.startswith('_')}
+    if 'ui_review_patch' in profile:
+        manifest['profile']['ui_review_files'] = load_ui_review(profile,files)
     write_manifest(backup,manifest)
     recovery_launcher(backup)
     swapped = False
@@ -505,7 +518,7 @@ def main(argv=None):
         restore(args)
         return
     profile = load_profile()
-    files = read_patch(profile['app_patch'])['files']
+    files = load_app_patch(profile)
     args.app = args.app.expanduser().absolute()
     if args.action in {'status', 'check-update', 'preview'}:
         report = (preview_report(args.app, profile, files) if args.action == 'preview'
