@@ -85,15 +85,16 @@ function scan(source, acorn, json = false) {
 function main(argv) {
   const args = {};
   for (let i = 0; i < argv.length; i += 2) {
-    if (!['--app', '--parser', '--output'].includes(argv[i]) || !argv[i + 1])
-      throw new Error('Usage: node scripts/audit_ui.cjs --app Cursor.app --output report.json [--parser acorn.js]');
+    if (!['--app', '--parser', '--output', '--profile'].includes(argv[i]) || !argv[i + 1])
+      throw new Error('Usage: node scripts/audit_ui.cjs --app Cursor.app --output report.json [--parser acorn.js] [--profile profile.json]');
     args[argv[i]] = argv[i + 1];
   }
   if (!args['--app'] || !args['--output']) throw new Error('--app and --output are required');
   const root = path.resolve(args['--app'], 'Contents/Resources/app');
   const acorn = args['--parser'] ? require(path.resolve(args['--parser'])) :
     createRequire(path.join(root, 'package.json'))('acorn');
-  const profile = JSON.parse(fs.readFileSync(path.join(__dirname, '../patches/profile.json'), 'utf8'));
+  const profile = JSON.parse(fs.readFileSync(args['--profile'] ??
+    path.join(__dirname, '../patches/profile.json'), 'utf8'));
   const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
   const product = JSON.parse(fs.readFileSync(path.join(root, 'product.json'), 'utf8'));
   if (pkg.version !== profile.cursor_version || product.commit !== profile.cursor_commit)

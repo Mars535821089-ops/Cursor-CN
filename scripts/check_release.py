@@ -7,6 +7,7 @@ import re
 import sys
 
 from runtime_build import ROOT,load_profile,read_patch
+from adapt_resources import load_resource_profile
 
 
 RULES = {
@@ -26,6 +27,8 @@ def inspect(data,label):
 
 def main():
     profile=load_profile();count=0;inserted=0
+    for candidate in (ROOT/'patches').glob('profile-*.json'):
+        load_resource_profile(candidate)
     for path in ROOT.rglob('*'):
         rel=path.relative_to(ROOT)
         if any(part in {'.git','.cache','.work','dist','__pycache__'} for part in rel.parts):continue

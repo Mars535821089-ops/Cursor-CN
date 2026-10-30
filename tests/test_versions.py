@@ -64,6 +64,19 @@ class VersionTests(unittest.TestCase):
         self.assertFalse(result['automatic_upgrade_or_patch'])
         self.assertTrue(result['no_application_writes'])
 
+    def test_preview_profile_is_not_reported_as_installation_support(self):
+        local = {'observed': {'version': '3.24.18'}, 'expected': {'version': '3.24.18'},
+                 'state': 'unknown_source', 'supported': False}
+        candidate = {'cursor_version': '3.27.22', 'cursor_commit': 'preview-build',
+                     'installation_supported': False}
+        with patch('check_versions.maintenance_report', return_value=local):
+            result = version_report(pathlib.Path('unused'), {'cursor_version': '3.24.18'},
+                                    {}, parse_latest(page()), [candidate])
+        self.assertEqual(result['repository_vs_official_series'], 'behind')
+        self.assertEqual(result['resource_previews'][0]['vs_official_series'],
+                         'same_series_patch_level_unknown')
+        self.assertFalse(result['resource_previews'][0]['installation_supported'])
+
 
 if __name__ == '__main__':
     unittest.main()

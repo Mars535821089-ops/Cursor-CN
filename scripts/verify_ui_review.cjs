@@ -8,14 +8,22 @@ const {createRequire} = require('node:module');
 const {scan} = require('./audit_ui.cjs');
 
 function main(argv) {
-  if (argv.length !== 4 || argv[0] !== '--app' || argv[2] !== '--output')
-    throw new Error('Usage: node scripts/verify_ui_review.cjs --app Cursor.app --output report.json');
-  const root = path.resolve(argv[1], 'Contents/Resources/app');
-  const output = path.resolve(argv[3]);
+  const args = {};
+  for (let i = 0; i < argv.length; i += 2) {
+    if (!['--app', '--output', '--profile'].includes(argv[i]) ||
+        !argv[i + 1] || Object.hasOwn(args, argv[i]))
+      throw new Error('Usage: node scripts/verify_ui_review.cjs --app Cursor.app --output report.json [--profile profile.json]');
+    args[argv[i]] = argv[i + 1];
+  }
+  if (!args['--app'] || !args['--output'])
+    throw new Error('Usage: node scripts/verify_ui_review.cjs --app Cursor.app --output report.json [--profile profile.json]');
+  const root = path.resolve(args['--app'], 'Contents/Resources/app');
+  const output = path.resolve(args['--output']);
   if (output === root || output.startsWith(root + path.sep))
     throw new Error('Report must be outside the application');
   const project = path.resolve(__dirname, '..');
-  const profile = JSON.parse(fs.readFileSync(path.join(project, 'patches/profile.json'), 'utf8'));
+  const profile = JSON.parse(fs.readFileSync(args['--profile'] ??
+    path.join(project, 'patches/profile.json'), 'utf8'));
   const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
   for (const [relative, expected] of Object.entries(profile.artifacts)) {
     if (sha(fs.readFileSync(path.join(project, relative))) !== expected)
@@ -28,6 +36,14 @@ function main(argv) {
   const acorn = createRequire(path.join(root, 'package.json'))('acorn');
   const patches = JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(project, profile.ui_review_patch)))).files;
   const dictionary = JSON.parse(fs.readFileSync(path.join(project, profile.ui_review_dictionary), 'utf8')).translations;
+  if (profile.ui_review_extra_dictionary) {
+    const extra = JSON.parse(fs.readFileSync(path.join(project, profile.ui_review_extra_dictionary), 'utf8')).translations;
+    for (const [source, target] of Object.entries(extra)) {
+      if (Object.hasOwn(dictionary, source) && dictionary[source] !== target)
+        throw new Error('Conflicting adaptation dictionaries');
+      dictionary[source] = target;
+    }
+  }
   const report = {schema: 1, version: pkg.version, commit: product.commit,
     no_application_writes: true, files: []};
   for (const [relative, patch] of Object.entries(patches)) {

@@ -76,12 +76,15 @@ python3 scripts/build_ui_review.py \
 ## 2026-10-30 版本跟进复核
 
 - 只读读取本机 `package.json` / `product.json`：3.24.18，构建 `be4c9e5350d77747b42cd467cbd3370a753d4640`，构建日期 `2026-10-13T18:12:58.182Z`。
-- [官方公开下载页](https://cursor.com/download) 的 `Latest` 标记为 **3.27**；同页 [macOS ARM64 链接](https://api2.cursor.sh/updates/download/golden/darwin-arm64/cursor/3.27) 的 HEAD 请求返回官方 `downloads.cursor.com` 下载位置，路径构建标识为 `b1aa50cb6db84fd3e8c808259cb172ea73425c1f`。未下载应用、未验证二进制签名，因此该路径标识不作为受支持构建或文件哈希；完整 `3.27.x` 版本未知。
+- [官方公开下载页](https://cursor.com/download) 的 `Latest` 标记为 **3.27**；同页 [macOS ARM64 链接](https://api2.cursor.sh/updates/download/golden/darwin-arm64/cursor/3.27) 的 HEAD 请求返回官方 `downloads.cursor.com` 下载位置，路径标识为 `b1aa50cb6db84fd3e8c808259cb172ea73425c1f`。随后已下载并只读验证该样本，精确版本为 **3.27.22**；样本 `product.json` 的 commit 为 `b1aa50cb6db84fd3e8c808259cb172ea73425c10`，不根据下载路径推测该字段。
 - `scripts/check_versions.py` 实际运行输出：本机和仓库相对官方均为 `behind`；本机资源为 `unknown_source`，退出码 **2**，没有把旧补丁应用当成最新已支持状态。
 - 再次完整扫描 69 个资源，并在内存验证 27 个审核补丁目标，799 处源码修正的前后指纹及非字符串结构均通过；新增 NLS 总计 972 处，结果指纹与 profile 一致。
-- 本次不更新支持 profile 的版本/构建字段，不生成猜测性的 3.27 差异，不重新签名或覆盖本机应用。缺少已验证的 3.27 原厂资源和完整安装验收是升级适配的阻挡项；现有专属 UI 补丁还需要修改副本并本地签名，与本次不修改签名的应用约束不兼容。
+- 可安装 `profile.json` 保持 3.24.18；新增独立 `profile-3.27.22.json` 及精确资源差异，模式为 `verified_resource_preview_only`，明确禁止当作安装支持。新样本 28 个资源、1,119 处源码文案差异已重新解析并验证非字符串 token 不变；NLS 优先使用 11,432 条官方语言包译文，另外 1,624 条按审核词条或精确原文 SHA-256 迁移，不复用旧索引。签名、剩余清单和重建命令详见 [资源适配说明](resource-adaptation.md)。
+- 没有重新签名或覆盖本机应用。仍未进行完整安装与 GUI 验收，且现有专属 UI 补丁需要修改副本并本地签名，与本次不修改签名的应用约束不兼容。
 
 官方系列检查是单独的显式联网入口；现有 `check-update` / `preview` 保持离线兼容性。页面标记、链接、大小或网络异常时检查报错，不降级为“最新”。测试使用模拟页面与网络响应验证这些行为，无需在 CI 中联网，也不会将网络错误默认为无更新。
+
+后续 3.27.22 资源适配使自动回归增至 **52 项**；前面 40 项记录对应 3.24.18 复查阶段，不代表新增资源已完成安装验收。
 
 ## 不能从这些测试推出的结论
 

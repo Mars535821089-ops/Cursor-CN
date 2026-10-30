@@ -9,7 +9,8 @@ import urllib.request
 
 from install import maintenance_report
 from patch_engine import PatchError
-from runtime_build import load_app_patch, load_profile
+from runtime_build import ROOT, load_app_patch, load_profile
+from adapt_resources import load_resource_profile
 
 
 SOURCE = 'https://cursor.com/download'
@@ -53,7 +54,7 @@ def series_relation(version, latest):
             else 'same_series_patch_level_unknown')
 
 
-def version_report(app, profile, files, latest):
+def version_report(app, profile, files, latest, previews=None):
     local = maintenance_report(app, profile, files)
     installed = local['observed']['version']
     if not isinstance(installed, str):
@@ -67,6 +68,11 @@ def version_report(app, profile, files, latest):
         'repository_vs_official_series': series_relation(profile['cursor_version'], latest['series']),
         'local_patch_state': local['state'],
         'local_patch_supported': local['supported'],
+        'resource_previews': [
+            {'version': item['cursor_version'], 'commit': item['cursor_commit'],
+             'vs_official_series': series_relation(item['cursor_version'], latest['series']),
+             'installation_supported': item['installation_supported']}
+            for item in (previews or [])],
         'no_application_writes': True,
         'automatic_upgrade_or_patch': False,
     }
@@ -77,7 +83,8 @@ def main(argv=None):
     parser.add_argument('--app', type=pathlib.Path, default=pathlib.Path('/Applications/Cursor.app'))
     args = parser.parse_args(argv)
     profile = load_profile()
-    report = version_report(args.app, profile, load_app_patch(profile), fetch_latest())
+    previews = [load_resource_profile(path) for path in sorted((ROOT/'patches').glob('profile-*.json'))]
+    report = version_report(args.app, profile, load_app_patch(profile), fetch_latest(), previews)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     if ('behind' in {report['installed_vs_official_series'],
                      report['repository_vs_official_series']} or not report['local_patch_supported']):

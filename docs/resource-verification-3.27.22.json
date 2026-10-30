@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "version": "3.27.22",
+  "commit": "b1aa50cb6db84fd3e8c808259cb172ea73425c10",
+  "no_application_writes": true,
+  "files": [
+    {
+      "path": "extensions/cursor-agent-exec/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "1b2988d066c4ed5acfec05e93a8063e17a7e12d6c5ae2013751ad4b00b9dec44",
+      "after_sha256": "3a307c9ed6ec38a6e037556717a8fe6c6d7b79144da00cf2b9fc7479b8ea5be2"
+    },
+    {
+      "path": "extensions/cursor-agent-host/package.json",
+      "corrected_ui_literals": 8,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "a60b53b3ccb49b7d0f90a5470e23075eef754b5f112e664e14503d86944543f8",
+      "after_sha256": "8575275fa6b49545120d10967a1cb9ab1323ba127262dd2b5e56ab6b57beb373"
+    },
+    {
+      "path": "extensions/cursor-agent-worker/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "e7935eec802f471ae9187e559c0982ccde65f37618aa52e2ee024b85121bd40f",
+      "after_sha256": "4d3f77790c0f818ef5aa7aeb91bb91bb94d0e9ddc201b2b315995cd9d7cfde72"
+    },
+    {
+      "path": "extensions/cursor-always-local/package.json",
+      "corrected_ui_literals": 2,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "e6f7827311ec5e9ba560332f15384fcec6ca9b5076de5d9f8e7e8d079a520f68",
+      "after_sha256": "fbdf7a01b0ce043858392a8518bb9fd60d19f2d49e8e81ac336ca63bd1d4bc5a"
+    },
+    {
+      "path": "extensions/cursor-always-local/package.nls.json",
+      "corrected_ui_literals": 2,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "dca8e3c7f4e29756605a885da1f6393b9e0328b899040dd3471a5a6586f07e0c",
+      "after_sha256": "a3a3e76b8754d28f769090cab91abe5f70537ca13f8c06e1a385bfddb8ebcd5f"
+    },
+    {
+      "path": "extensions/cursor-checkout/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "caba0ed347cba093be5b3f0b2514f01cc4a519d37cb1c19a817243ac9b205189",
+      "after_sha256": "e5487a6c21476f78580457e0aed5197873bbdb48a759ae73f799604451b3325c"
+    },
+    {
+      "path": "extensions/cursor-commits/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "2fe260576825b2be548ce1e90214966bd9e49ae0d2c68a9dbc7e7dc9a0fc7d78",
+      "after_sha256": "2e9c1c3c07ab64285e92eb134331e4828d02248dd56d1ec9e4d2b4f9529b82d7"
+    },
+    {
+      "path": "extensions/cursor-deeplink/package.json",
+      "corrected_ui_literals": 2,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "e54ce97f33178c20e4847cbc502ffa0b20f1eb67a827ddb73cf372305edddf1f",
+      "after_sha256": "091249d5cf083977fe1c815774a1ffe61689d1fbdb4f947282e8fc8a6517ccde"
+    },
+    {
+      "path": "extensions/cursor-explorer/package.json",
+      "corrected_ui_literals": 2,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "84b1338f7ed81205a98d0503bbe00756409c6ab1f580e7ebd8843b582ddb19cf",
+      "after_sha256": "6b62b8af15c30ca9c6c8c56fbc5b97dd3112a0a1cd5430e954a543382dc545ba"
+    },
+    {
+      "path": "extensions/cursor-file-service/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "f9612e67e37ccd4c90a72402bb57ae5158d4d82d3997d14641ed3a1a3380f2a6",
+      "after_sha256": "55d9632bc977b413ef1d5d818a1a27f5497973bd8cd55f1eb5b7edc11f074f73"
+    },
+    {
+      "path": "extensions/cursor-local-agent-runtime/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "a243b0abd8bafb24efef9216562bb859b919be75fb2301122627cb8642d98250",
+      "after_sha256": "83e2ee0e418bcd8f9cf8487c6df245bdec2479a1ef9bb617c8210d8babdcd7ff"
+    },
+    {
+      "path": "extensions/cursor-mcp/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "a906de6ad9a2e7be0aa7babef7a0b92c73f7571b4b5990dc1207ae71404c9922",
+      "after_sha256": "f086ef9ba70a44cab816296319a5ae7cbce800cbf2e628dc3604095842a748b0"
+    },
+    {
+      "path": "extensions/cursor-ndjson-ingest/package.json",
+      "corrected_ui_literals": 10,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "3884bf40eed7fb8ded86bd0f18df575d23d990fba47a78c3221ab9535b946325",
+      "after_sha256": "daa32638ba21451c174421df30965bc3bcde36acc6396ce70ec3050256e8c0ed"
+    },
+    {
+      "path": "extensions/cursor-polyfills-remote/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "3cdb77b5389f7ccdd918b2685b3a8c603a026a078004d648be82a27d894cbf37",
+      "after_sha256": "42cc44144d3d2a70b42a44af389350f75d0b89f953616338f0c9e98f12f62185"
+    },
+    {
+      "path": "extensions/cursor-resolver-helper/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "39f5be4c41f75f85f301b845a6ce47a3535d67b50ecd2a12dd7c64b69549651d",
+      "after_sha256": "205fcb8de68123a4ed5b266cd58402b22a74a0fa46f1723fd9fbdcc0d5386f41"
+    },
+    {
+      "path": "extensions/cursor-resolver/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "569c307ea4aecfb01a4d8a9f998f340739d3c04fe09ce7ca2a2b0f5f964a03c0",
+      "after_sha256": "cdc74b14bced2a7679382ffa8004c0058e5f565e45535ab2e42f3ff3d04629de"
+    },
+    {
+      "path": "extensions/cursor-retrieval/package.json",
+      "corrected_ui_literals": 6,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "f6f1028d57c61c292a09cdb99bc22028f5f4e37c43335c511841cbb1d46ef4bd",
+      "after_sha256": "354162ccfb2a7dca173b3868d5554cebb036d7d76e50cae995259b436ba57e45"
+    },
+    {
+      "path": "extensions/cursor-retrieval/package.nls.json",
+      "corrected_ui_literals": 2,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "42c6840c5eff9079e5dff56650434527b430652d74ddc72b617aa9e22b779af1",
+      "after_sha256": "6f91baabe587e1c429a41a5af07c049c0c3c4d133ee59b393280907e9372ddbb"
+    },
+    {
+      "path": "extensions/cursor-shadow-workspace/package.nls.json",
+      "corrected_ui_literals": 2,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "163bd21c4831c736ef2f07fd2157017ccae89dc2e367981d0dfaca89eb3ebad1",
+      "after_sha256": "f2d9803ed62d1c13e1aaf79796bac156c95701d064463d671bf195d613e02769"
+    },
+    {
+      "path": "extensions/cursor-socket/package.json",
+      "corrected_ui_literals": 1,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "8b62e78178f25dfbcc5b5cac2578965364f76e7671e8e5f5fab78e775a6a8df9",
+      "after_sha256": "9ea4e846f49693e468a49650163d2db15e9e0c059345e421f095aff28a740fcc"
+    },
+    {
+      "path": "extensions/protobuf/package.nls.json",
+      "corrected_ui_literals": 2,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "265e5826f05f7a5d250928457fe5276520967d1161c1ef3abbd9c5e308a939e3",
+      "after_sha256": "6fbada6cbe79e1aebe58001e5c7a126bdae5e96a2741e4c14b4f53bccf4cfe8a"
+    },
+    {
+      "path": "out/main.js",
+      "corrected_ui_literals": 53,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "2433d9b8efe19d24039c59694b734b29c80dab13b14e7a38103991dc37948dec",
+      "after_sha256": "803f7a86a15aef4e1f79bd27eb5062e6d0529f5009ac6b14aebffc0784067e92"
+    },
+    {
+      "path": "out/vs/base/parts/storage/node/storageSizeScanMain.js",
+      "corrected_ui_literals": 13,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "ebd222e636ab91304de22769e6eaeb91156738aec201f2519760fb3e538612cf",
+      "after_sha256": "ba6561c7555debcf3f0931d2f7a43d4bf2b7b9aeb4620781a3824de435b2e591"
+    },
+    {
+      "path": "out/vs/code/electron-sandbox/processExplorer/processExplorerMain.js",
+      "corrected_ui_literals": 8,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "46dbd00716e3309f5a9037392a5142fb5218e23891e8fdfc30fd0e88ee464fba",
+      "after_sha256": "a181497da0c8dfca94fa826b3d1dfa587a68fd4aa592a0c236f60057e6d94c0b"
+    },
+    {
+      "path": "out/vs/code/electron-utility/mcpProcess/mcpProcessMain.js",
+      "corrected_ui_literals": 4,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "45c75a69301b18d74fa3b762ae56cdc34f4fead1ffbfc6ff049101a852b91884",
+      "after_sha256": "8f01754b87ecf302fe187c4638b0c117dc526811a71d8a348ffffc82324bcf67"
+    },
+    {
+      "path": "out/vs/workbench/workbench.anysphere-ui-automations.js",
+      "corrected_ui_literals": 116,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "0d79d38956d0713501aea70aa921a0d58ed8666f09130478291f2952c90e1131",
+      "after_sha256": "3b9f10428f9c6b00918eb4e7932743fb45acf9e61c84d8a5add2d650d8a23bde"
+    },
+    {
+      "path": "out/vs/workbench/workbench.desktop.main.js",
+      "corrected_ui_literals": 288,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "fd9ac3ed70ddcfa975f357187152488abcc8a4d183d776442593d5967b9821b6",
+      "after_sha256": "72159483fc192ed3c68376df28d7f3f37608914cbe09e64b1f3afee2be33c72e"
+    },
+    {
+      "path": "out/vs/workbench/workbench.glass.main.js",
+      "corrected_ui_literals": 588,
+      "non_string_tokens_unchanged": true,
+      "string_node_count_unchanged": true,
+      "no_reviewed_literal_remaining": true,
+      "before_sha256": "6c433934efe7d6652500c492a3bd0ac03efe59404d9b438e45420dde3dd81ade",
+      "after_sha256": "59648460972a645e2eaa6822308c63b10af52afa81562c46fae1f071e02a9d8e"
+    }
+  ],
+  "pass": true
+}
